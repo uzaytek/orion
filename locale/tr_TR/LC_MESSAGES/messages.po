@@ -1,0 +1,2047 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: orion 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-24 15:53+0200\n"
+"PO-Revision-Date: 2012-05-07 13:38+0200\n"
+"Last-Translator: Aydin Uzun <uzaytek@gmail.com>\n"
+"Language-Team: uzaytek <aydin.uzun@uzaytek.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Bookmarks: 175,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"Project-Id-Version: orion 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-25 16:33+0300\n"
+"PO-Revision-Date: 2012-04-25 16:36+0200\n"
+"Last-Translator: Aydin Uzun <uzaytek@gmail.com>\n"
+"Language-Team: uzaytek translation team <aydin.uzun@uzaytek.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: Orion 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-07 13:23+0300\n"
+"PO-Revision-Date: 2012-05-07 13:25+0200\n"
+"Last-Translator: Aydin Uzun <uzaytek@gmail.com>\n"
+"Language-Team: uzaytek <aydin.uzun@uzaytek.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: payment/paypal.php:27
+#: payment/paypal_express.php:34
+#: payment/ccard.php:25
+msgid "Payment Successfull"
+msgstr "Ödeme başarılı bir şekilde yapıldı"
+
+#: payment/paypal.php:29
+#: payment/ccard.php:27
+msgid "Payment Failed"
+msgstr "Ödeme yapılamadı"
+
+#: payment/eft.php:25
+#: payment/check.php:25
+msgid "Information saved successfully"
+msgstr "Bilgileriniz başarılı bir şekilde kaydedildi"
+
+#: detail.php:32
+msgid "Product not found"
+msgstr "Ürün bulunamadı"
+
+#: basket.php:56
+#: admin/stat.php:49
+#: admin/list_products.php:27
+#: admin/product_search.php:28
+#: includes/ON_Basket.php:147
+#: includes/ON_Product.php:253
+msgid "Product Name"
+msgstr "Ürün Adı"
+
+#: basket.php:56
+#: admin/list_products.php:27
+#: admin/payment_details.php:50
+#: admin/product_search.php:28
+#: includes/ON_Basket.php:147
+#: includes/ON_Product.php:260
+msgid "Price"
+msgstr "Fiyat"
+
+#: basket.php:56
+#: includes/ON_Basket.php:147
+msgid "Count"
+msgstr "Sayı"
+
+#: basket.php:56
+#: includes/ON_Basket.php:147
+msgid "Sub Total"
+msgstr "Ara Toplam"
+
+#: basket.php:81
+#: admin/payment_details.php:62
+msgid "Total"
+msgstr "Toplam"
+
+#: admin/newsletter_send.php:40
+#, php-format
+msgid "E-Bulletin successfully insert the mail que. Total %d e-mail will be post"
+msgstr "Bülten başarılı bir şekilde posta kuyruğuna kaydedildi. Toplam %d eposta gönderilecek."
+
+#: admin/newsletter_send.php:50
+msgid "Please enter a bulletin first"
+msgstr "Lütfe önce bir bülten kaydı giriniz"
+
+#: admin/newsletter_send.php:53
+msgid "Registered bulletin member is 0"
+msgstr "Kayıtlı bülten üyeniz bulunmamaktadır"
+
+#: admin/faq.php:24
+msgid "Faq updated successfully"
+msgstr "Sık Sorulan Sorular başarılı bir şekilde güncellendi"
+
+#: admin/faq.php:28
+msgid "Faq update failed"
+msgstr "Sık Sorulan Sorular güncellemesi yapılamadı"
+
+#: admin/faq.php:33
+msgid "Faq inserted successfully"
+msgstr "Sık Sorulan Sorular başarılı bir şekilde kaydedildi"
+
+#: admin/faq.php:36
+msgid "Faq insert failed"
+msgstr "Sık Sorulan Sorular kayıt edilirken bir hata oluştu"
+
+#: admin/list_news.php:15
+msgid "Selected news deleted successfully"
+msgstr "Seçilen haber başarılı bir şekilde silindi"
+
+#: admin/list_news.php:26
+#: admin/list_banner.php:30
+#: admin/list_categories.php:37
+#: admin/list_faqs.php:26
+#: admin/list_users.php:21
+#: includes/ON_Product.php:50
+msgid "Modify"
+msgstr "Değiştir"
+
+#: admin/list_news.php:27
+#: admin/list_banner.php:31
+#: admin/list_categories.php:38
+#: admin/upload_file.php:74
+#: admin/list_faqs.php:27
+#: admin/list_users.php:22
+#: includes/ON_Product.php:52
+msgid "Delete"
+msgstr "Sil"
+
+#: admin/list_news.php:29
+#: includes/ON_News.php:66
+msgid "News Title"
+msgstr "Haber Başlığı"
+
+#: admin/list_news.php:29
+msgid "News Detail"
+msgstr "Haber Detayı"
+
+#: admin/list_news.php:36
+msgid "Total News Count:"
+msgstr "Toplam Haber Sayısı"
+
+#: admin/list_news.php:39
+msgid "News record not found"
+msgstr "Haber kaydı bulunamadı"
+
+#: admin/login.php:49
+#: includes/ON_Utils.php:63
+msgid "Please control your username/password"
+msgstr "Lütfen kullanıcı adı/parola bilgilerinizi kontrol ediniz"
+
+#: admin/login.php:52
+msgid "Session expired"
+msgstr "Oturum zaman aşımına uğradı, tekrar giriş yapınız"
+
+#: admin/login.php:56
+msgid "Please enter your username/password"
+msgstr "Lütfen kullanıcı adı/şifre bilginizi giriniz"
+
+#: admin/login.php:62
+#: admin/list_users.php:25
+#: includes/ON_User.php:333
+#: includes/ON_User.php:386
+#: includes/ON_Admin.php:159
+msgid "Username"
+msgstr "Kullanıcı Adı"
+
+#: admin/login.php:70
+#: includes/ON_User.php:392
+msgid "Login"
+msgstr "Giriş"
+
+#: admin/user.php:24
+msgid "User updated successfully"
+msgstr "Kullanıcı başarılı bir şekilde güncellendi"
+
+#: admin/user.php:28
+msgid "User update failed"
+msgstr "Kullanıcı güncellemesi yapılamadı"
+
+#: admin/user.php:33
+msgid "User inserted successfully"
+msgstr "Kullanıcı başarılı bir şekilde kaydedildi"
+
+#: admin/user.php:37
+msgid "User insert failed"
+msgstr "Kullanıcı kaydedilmesi yapılamadı"
+
+#: admin/stat.php:28
+msgid "Month"
+msgstr "Ay"
+
+#: admin/stat.php:32
+msgid "Year"
+msgstr "Yıl"
+
+#: admin/stat.php:36
+#: includes/ON_SelectForm.php:50
+msgid "Go"
+msgstr "Git"
+
+#: admin/stat.php:51
+msgid "ANON. VIEW"
+msgstr "Anonim İzleme"
+
+#: admin/stat.php:51
+msgid "ANONYMOUS VIEW"
+msgstr "Anonim İzleme"
+
+#: admin/stat.php:52
+msgid "USER VIEW"
+msgstr "Kullanıcı İzleme"
+
+#: admin/stat.php:53
+msgid "ANON. LIKE"
+msgstr "Anonim Beğenme"
+
+#: admin/stat.php:53
+msgid "ANONYMOUS LIKE"
+msgstr "Anonim Beğenme"
+
+#: admin/stat.php:54
+msgid "USER LIKE"
+msgstr "Kayıtlı Üye Beğenme"
+
+#: admin/stat.php:66
+msgid "Statistic record not found for the selected month"
+msgstr "Seçilen ay için istatistik kaydı bulunamadı"
+
+#: admin/skin.php:5
+msgid "Admin Area"
+msgstr "Yönetim Paneli"
+
+#: admin/skin.php:62
+msgid "Web Site"
+msgstr "Web Sitesi"
+
+#: admin/skin.php:65
+#: includes/ON_Product.php:305
+msgid "Search"
+msgstr "Ara"
+
+#: admin/skin.php:69
+#: admin/globals.php:30
+msgid "Orders"
+msgstr "Siparişler"
+
+#: admin/skin.php:71
+#: admin/globals.php:31
+msgid "New Orders"
+msgstr "Yeni Siparişler"
+
+#: admin/skin.php:74
+#: admin/skin.php:76
+#: admin/globals.php:8
+msgid "Products"
+msgstr "Ürünler"
+
+#: admin/skin.php:77
+#: admin/globals.php:9
+msgid "New Product"
+msgstr "Yeni Ürün"
+
+#: admin/skin.php:78
+#: admin/globals.php:15
+msgid "New Category"
+msgstr "Yeni Kategori"
+
+#: admin/skin.php:81
+#: admin/globals.php:19
+msgid "Content"
+msgstr "İçerik"
+
+#: admin/skin.php:83
+#: admin/globals.php:20
+msgid "New News"
+msgstr "Yeni Haber"
+
+#: admin/skin.php:84
+#: admin/globals.php:26
+msgid "New E-Bulletin"
+msgstr "Yeni Bülten"
+
+#: admin/skin.php:102
+msgid "Red"
+msgstr "Kırmızı"
+
+#: admin/skin.php:103
+msgid "Blue"
+msgstr "Mavi"
+
+#: admin/skin.php:104
+msgid "Green"
+msgstr "Yeşil"
+
+#: admin/skin.php:105
+msgid "Brown"
+msgstr "Kahverengi"
+
+#: admin/skin.php:106
+msgid "Mix"
+msgstr "Karışık"
+
+#: admin/list_products.php:15
+msgid "Product deleted successfully"
+msgstr "Ürün başarılı bir şekilde silindi"
+
+#: admin/list_products.php:27
+#: admin/product_search.php:28
+msgid "Category"
+msgstr "Kategori"
+
+#: admin/list_products.php:27
+#: admin/product_search.php:28
+#: includes/ON_Product.php:291
+#: includes/ON_Settings.php:124
+msgid "Description"
+msgstr "Açıklama"
+
+#: admin/list_products.php:37
+msgid "Total Product Count:"
+msgstr "Toplam Ürün Sayısı:"
+
+#: admin/list_products.php:41
+msgid "Product records not found"
+msgstr "Ürün kaydı bulunamadı"
+
+#: admin/category.php:24
+msgid "Category updated successfully"
+msgstr "Kategori başarılı bir şekilde güncellendi"
+
+#: admin/category.php:28
+msgid "Category update failed"
+msgstr "Kategori güncellenmesi yapılamadı"
+
+#: admin/category.php:33
+msgid "Category inserted successfully"
+msgstr "Kategori başarılı bir şekilde kaydedildi"
+
+#: admin/category.php:37
+msgid "Category insert failed"
+msgstr "Kategori kaydı yapılamadı"
+
+#: admin/globals.php:5
+msgid "Dashboard"
+msgstr "Ana Sayfa"
+
+#: admin/globals.php:10
+msgid "List Products"
+msgstr "Ürün Listesi"
+
+#: admin/globals.php:11
+msgid "Product Search"
+msgstr "Ürün Arama"
+
+#: admin/globals.php:14
+msgid "Categories"
+msgstr "Kategoriler"
+
+#: admin/globals.php:16
+msgid "List Categories"
+msgstr "Kategori Listesi"
+
+#: admin/globals.php:21
+msgid "List News"
+msgstr "Haber Listesi"
+
+#: admin/globals.php:22
+msgid "New Banner"
+msgstr "Yeni Reklam"
+
+#: admin/globals.php:23
+msgid "List Banner"
+msgstr "Reklam Listesi"
+
+#: admin/globals.php:24
+msgid "New Faq"
+msgstr "Yeni SSS"
+
+#: admin/globals.php:25
+msgid "List Faq"
+msgstr "SSS Listesi"
+
+#: admin/globals.php:27
+msgid "Send E-Bullettin"
+msgstr "Bülten Gönder"
+
+#: admin/globals.php:28
+msgid "Upload Document"
+msgstr "Dosya Yükleme"
+
+#: admin/globals.php:32
+msgid "Order Archive"
+msgstr "Sipariş Arşivi"
+
+#: admin/globals.php:34
+msgid "Reports"
+msgstr "Raporlar"
+
+#: admin/globals.php:35
+msgid "Product Reports"
+msgstr "Ürün Raporları"
+
+#: admin/globals.php:36
+msgid "Category Reports"
+msgstr "Kategori Raporları"
+
+#: admin/globals.php:38
+msgid "Users"
+msgstr "Üye"
+
+#: admin/globals.php:39
+msgid "New User"
+msgstr "Yeni Üye"
+
+#: admin/globals.php:40
+msgid "List Users"
+msgstr "Üye Listesi"
+
+#: admin/globals.php:42
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: admin/globals.php:43
+msgid "Store Informations"
+msgstr "Dükkan Bilgileri"
+
+#: admin/globals.php:44
+msgid "My Informations"
+msgstr "Bilgilerim"
+
+#: admin/globals.php:46
+msgid "Logout"
+msgstr "Çıkış"
+
+#: admin/logout.php:12
+msgid "Session closed successfuly"
+msgstr "Oturum başarılı bir şekilde kapatıldı"
+
+#: admin/list_banner.php:16
+msgid "File deleted successfuly"
+msgstr "Dosya başarılı bir şekilde silindi"
+
+#: admin/list_banner.php:33
+#: admin/upload_file.php:76
+msgid "Name"
+msgstr "Adı"
+
+#: admin/list_banner.php:33
+msgid "Location"
+msgstr "Konumu"
+
+#: admin/list_banner.php:33
+#: includes/ON_Banner.php:71
+msgid "Url"
+msgstr "Site Adresi"
+
+#: admin/list_banner.php:33
+#: admin/upload_file.php:76
+msgid "Upload Date"
+msgstr "Yükleme Tarihi"
+
+#: admin/list_banner.php:39
+#: admin/upload_file.php:83
+msgid "Total File Count:"
+msgstr "Toplam Dosya Sayısı:"
+
+#: admin/list_banner.php:42
+msgid "Banner record not found"
+msgstr "Reklam kaydı bulunamadı"
+
+#: admin/payment_details.php:22
+msgid "Product marked as in the supply"
+msgstr "Ürün tedarik aşamasında olarak işaretlendi"
+
+#: admin/payment_details.php:29
+msgid "Product marked as in the cargo"
+msgstr "Ürün kargoya verildi olarak işaretlendi"
+
+#: admin/payment_details.php:43
+msgid "In Supply"
+msgstr "Tedarik Aşamasında"
+
+#: admin/payment_details.php:44
+msgid "In Cargo"
+msgstr "Kargoda"
+
+#: admin/payment_details.php:50
+msgid "Product"
+msgstr "Ürün"
+
+#: admin/payment_details.php:50
+msgid "Product Status"
+msgstr "Ürün Durumu"
+
+#: admin/payment_details.php:60
+msgid "Order Details"
+msgstr "Sipariş Detayı"
+
+#: admin/payment_details.php:61
+#: includes/ON_Payment.php:226
+msgid "Order Number"
+msgstr "Sipariş Numarası"
+
+#: admin/payment_details.php:63
+#: includes/ON_Payment.php:226
+msgid "Payment Type"
+msgstr "Ödeme Tipi"
+
+#: admin/payment_details.php:64
+#: includes/ON_Payment.php:226
+msgid "Date/Time"
+msgstr "Tarih/Zaman"
+
+#: admin/payment_details.php:65
+msgid "Payment Owner Name"
+msgstr "Ödeme yapan kişi"
+
+#: admin/payment_details.php:66
+#: includes/ON_Payment.php:226
+msgid "Payment Status"
+msgstr "Ödeme durumu"
+
+#: admin/payment_details.php:67
+msgid "IP"
+msgstr "IP"
+
+#: admin/payment_details.php:68
+#: includes/ON_User.php:150
+msgid "Billing Name"
+msgstr "Fatura Ad Soyad"
+
+#: admin/payment_details.php:69
+#: includes/ON_User.php:152
+msgid "Billing Address"
+msgstr "Fatura Adresi"
+
+#: admin/payment_details.php:70
+#: includes/ON_User.php:155
+#: includes/ON_User.php:358
+msgid "Post Code"
+msgstr "Posta Kodu"
+
+#: admin/payment_details.php:71
+#: includes/ON_User.php:157
+#: includes/ON_User.php:360
+msgid "City"
+msgstr "Şehir"
+
+#: admin/payment_details.php:72
+#: includes/ON_User.php:163
+#: includes/ON_User.php:366
+msgid "Telephone"
+msgstr "Telefon"
+
+#: admin/payment_details.php:82
+msgid "Order record not found"
+msgstr "Sipariş kaydı bulunamadı"
+
+#: admin/list_categories.php:16
+msgid "Selected category deleted successfully"
+msgstr "Seçilen kategori başarılı bir şekilde silindi"
+
+#: admin/list_categories.php:25
+msgid "Category orders updated successfully"
+msgstr "Kategori sırası başarılı bir şekilde güncellendi"
+
+#: admin/list_categories.php:40
+#: includes/ON_Cat.php:127
+msgid "Category Title"
+msgstr "Kategori Başlığı"
+
+#: admin/list_categories.php:40
+msgid "Category Order"
+msgstr "Kategori Sırası"
+
+#: admin/list_categories.php:47
+msgid "Total Category Count:"
+msgstr "Toplam Kategori Sayısı"
+
+#: admin/list_categories.php:48
+msgid "Update Category Orders"
+msgstr "Kategori Sırasını Güncelle"
+
+#: admin/list_categories.php:51
+msgid "Category record not found"
+msgstr "Kategori kaydı bulunamadı"
+
+#: admin/settings-store.php:23
+msgid "Settings updated successfuly"
+msgstr "Ayarlar başarılı bir şekilde güncellendi"
+
+#: admin/settings-store.php:25
+msgid "Database error: settings update failed"
+msgstr "Veritabanı hatası: ayar güncellemesi yapılamadı"
+
+#: admin/settings-store.php:30
+msgid "Settings inserted successfuly"
+msgstr "Ayarlar başarılı bir şekilde kaydedildi"
+
+#: admin/settings-store.php:32
+msgid "Database error: settings insert failed"
+msgstr "Veritabanı hatası: ayar kaydedilmesi yapılamadı"
+
+#: admin/upload_file.php:20
+msgid "File deleted successfully"
+msgstr "Dosya başarılı bir şekilde silindi"
+
+#: admin/upload_file.php:58
+msgid "File uploaded successfully"
+msgstr "Dosya başarılı bir şekilde yüklendi"
+
+#: admin/upload_file.php:60
+msgid "File insert failed"
+msgstr "Dosya kaydedilmesi yapılamadı"
+
+#: admin/upload_file.php:63
+msgid "File upload failed"
+msgstr "Dosya güncellenmesi yapılamadı"
+
+#: admin/upload_file.php:73
+msgid "Download"
+msgstr "İndir"
+
+#: admin/list_faqs.php:15
+msgid "Selected faq deleted successfully"
+msgstr "Seçilen sss başarılı bir şekilde silindi"
+
+#: admin/list_faqs.php:29
+#: includes/ON_Faq.php:66
+msgid "Faq Title"
+msgstr "SSS Başlığı"
+
+#: admin/list_faqs.php:29
+msgid "Faq Detail"
+msgstr "SSS Detay"
+
+#: admin/list_faqs.php:36
+msgid "Total Faq Count:"
+msgstr "Toplam SSS Sayısı"
+
+#: admin/list_faqs.php:39
+msgid "Faq record not found"
+msgstr "Sık Sorulan Soru kaydı bulunamadı"
+
+#: admin/product.php:27
+msgid "Product information updated successfully"
+msgstr "Ürün bilgileri başarılı bir şekilde güncellendi"
+
+#: admin/product.php:31
+msgid "Product information update failed"
+msgstr "Ürün bilgileri güncellenemedi"
+
+#: admin/product.php:36
+msgid "Product information inserted successfully"
+msgstr "Ürün bilgileri başarılı bir şekilde kaydedildi"
+
+#: admin/product.php:39
+msgid "Product information insert failed"
+msgstr "Ürün bilgileri kaydedilemedi"
+
+#: admin/banner.php:28
+msgid "Banner modified successfuly"
+msgstr "Reklam başarılı bir şekilde güncellendi"
+
+#: admin/banner.php:30
+msgid "Database error: banner update failed"
+msgstr "Veritabanı hatası: reklam güncellemesi yapılamadı"
+
+#: admin/banner.php:35
+msgid "Banner inserted successfuly"
+msgstr "Reklam başarılı bir şekilde kaydedildi"
+
+#: admin/banner.php:38
+msgid "Database error: banner insert failed"
+msgstr "Veritabanı hatası: reklam güncellemesi yapılamadı"
+
+#: admin/product_search.php:39
+#, php-format
+msgid "%s result found"
+msgstr "%s kayıt bulundu"
+
+#: admin/product_search.php:46
+msgid "Result not found, please try again different terms or use detail search page"
+msgstr "Sonuç bulunamadı, lütfen farklı terimlerle tekrar deneyin veya detaylı arama sayfasını kullanın"
+
+#: admin/news.php:24
+msgid "News updated successfully"
+msgstr "Haber başarılı bir şekilde güncellendi"
+
+#: admin/news.php:28
+msgid "News update failed"
+msgstr "Haber güncellemesi yapılamadı"
+
+#: admin/news.php:33
+msgid "News inserted successfully"
+msgstr "Haber başarılı bir şekilde kaydedildi"
+
+#: admin/news.php:37
+msgid "News insert failed"
+msgstr "Haber kaydedilmesi yapılamadı"
+
+#: admin/product_image.php:10
+msgid "Product ID not found"
+msgstr "Ürün ID bulunamadı"
+
+#: admin/product_image.php:23
+msgid "Image deleted successfully"
+msgstr "Fotoğraf başarılı bir şekilde silindi"
+
+#: admin/product_image.php:30
+msgid "Image set to default image successfully"
+msgstr "Seçtiğiniz fotoğraf varsayılan olarak işaretlendi"
+
+#: admin/product_image.php:51
+msgid "Product image uploaded successfully"
+msgstr "Ürün fotoğrafı başarılı bir şekilde yüklendi"
+
+#: admin/product_image.php:53
+msgid "Product image upload failed"
+msgstr "Ürün fotoğraf yüklemesi yapılamadı"
+
+#: admin/product_image.php:56
+msgid "Product image can't upload to server"
+msgstr "Ürün fotoğrafı sunucuya yüklenemedi"
+
+#: admin/list_payments.php:12
+msgid "Payment record not found"
+msgstr "Ürün kaydı bulunamadı"
+
+#: admin/newsletter.php:14
+#, php-format
+msgid "Registered e-bulletin member count %s"
+msgstr "Kayıtlı e-bülten üye sayısı %s"
+
+#: admin/newsletter.php:24
+msgid "Newsletter updated successfully"
+msgstr "Bülten başarılı bir şekilde güncellendi"
+
+#: admin/newsletter.php:26
+msgid "Newsletter update failed"
+msgstr "Bülten güncellemesi yapılamadı"
+
+#: admin/newsletter.php:31
+msgid "Newsletter inserted successfully"
+msgstr "Bülten başarılı bir şekilde kaydedildi"
+
+#: admin/newsletter.php:33
+msgid "Newsletter insert failed"
+msgstr "Bülten kaydedilmesi yapılamadı"
+
+#: admin/list_users.php:25
+#: includes/ON_Newsletter.php:103
+#: includes/ON_User.php:345
+#: includes/ON_Admin.php:161
+#: includes/ON_Utils.php:413
+msgid "E-mail"
+msgstr "E-posta"
+
+#: admin/list_users.php:25
+msgid "Tel"
+msgstr "Tel"
+
+#: admin/list_users.php:25
+#: includes/ON_User.php:355
+#: includes/ON_Settings.php:148
+msgid "Address"
+msgstr "Adres"
+
+#: admin/list_users.php:35
+msgid "Total User Count:"
+msgstr "Toplam Kullanıcı Sayısı"
+
+#: admin/list_users.php:39
+msgid "User records not found"
+msgstr "Üye kaydı bulunamadı"
+
+#: admin/myinfo.php:25
+msgid "Your informations updated successfuly"
+msgstr "Bilgileriniz başarılı bir şekilde güncellendi"
+
+#: admin/myinfo.php:32
+msgid "Session expried, please login and try again"
+msgstr "Oturumunuz sonlanmış, lütfen tekrar giriş yaparak deneyin"
+
+#: includes/ON_SelectForm.php:38
+#: includes/ON_Utils.php:584
+msgid "Select"
+msgstr "Seçiniz"
+
+#: includes/ON_Cat.php:128
+msgid "Category title required"
+msgstr "Kategori başlığı gereklidir"
+
+#: includes/ON_Cat.php:130
+msgid "Parent Category"
+msgstr "Ana Kategori"
+
+#: includes/ON_Cat.php:132
+#: includes/ON_Faq.php:73
+#: includes/ON_News.php:73
+#: includes/ON_Newsletter.php:127
+#: includes/ON_User.php:376
+#: includes/ON_Product.php:294
+#: includes/ON_Admin.php:166
+#: includes/ON_Banner.php:74
+#: includes/ON_Settings.php:151
+msgid "Save"
+msgstr "Kaydet"
+
+#: includes/ON_Faq.php:67
+msgid "Faq title required"
+msgstr "SSS başlığı gereklidir"
+
+#: includes/ON_Faq.php:71
+msgid "Faq detail required"
+msgstr "SSS detayı gereklidir"
+
+#: includes/payment/ON_CCard.php:27
+msgid "Do Payment"
+msgstr "Ödeme Yap"
+
+#: includes/payment/ON_CCard.php:37
+#: includes/ON_Payment.php:207
+msgid "Credit Card"
+msgstr "Kredi Kartı"
+
+#: includes/payment/ON_CCard.php:38
+msgid "Credit Card Owner"
+msgstr "Kredi Kart Sahibi"
+
+#: includes/payment/ON_CCard.php:39
+msgid "Credit card owner required"
+msgstr "Kredi kart sahibi gereklidir"
+
+#: includes/payment/ON_CCard.php:41
+msgid "Credit Card Number"
+msgstr "Kredi Kart Numarası"
+
+#: includes/payment/ON_CCard.php:42
+msgid "Credit card maximum length is 19"
+msgstr "Kredi kartı maksimum uzunluğu 19'dur"
+
+#: includes/payment/ON_CCard.php:43
+msgid "Credit card number required"
+msgstr "Kart numarası gereklidir"
+
+#: includes/payment/ON_CCard.php:45
+msgid "Card Type"
+msgstr "Kart Tipi"
+
+#: includes/payment/ON_CCard.php:46
+msgid "Card type required"
+msgstr "Kart tipi gereklidir"
+
+#: includes/payment/ON_CCard.php:50
+msgid "Expiration Date"
+msgstr "Son Kullanma Tarihi"
+
+#: includes/payment/ON_CCard.php:51
+msgid "Expiration date required"
+msgstr "Son kullanma tarihi gereklidir"
+
+#: includes/payment/ON_CCard.php:53
+msgid "Card Identification Number"
+msgstr "Kart Güvenlik Numarası"
+
+#: includes/payment/ON_CCard.php:54
+msgid "Last 3 digits located on the back of the credit card"
+msgstr "Kredi kartınızın arkasında bulunan 3 haneli numaradır"
+
+#: includes/payment/ON_CCard.php:55
+msgid "Card identification number maximum length is 4"
+msgstr "Güvenlik numarası maksimum 4 hanedir"
+
+#: includes/payment/ON_CCard.php:57
+msgid "Card identification number required"
+msgstr "Kart güvenik numarası gereklidir"
+
+#: includes/payment/ON_Check.php:10
+msgid "Check Information"
+msgstr "Çek Bilgisi"
+
+#: includes/payment/ON_Check.php:12
+msgid "Check Account"
+msgstr "Çek Hesabı"
+
+#: includes/payment/ON_Check.php:13
+msgid "Sender Name"
+msgstr "Gönderen Adı"
+
+#: includes/payment/ON_Check.php:14
+msgid "Sender name required"
+msgstr "Gönderen adı gereklidir"
+
+#: includes/payment/ON_Check.php:16
+#: includes/payment/ON_Garanti.php:98
+#: includes/payment/ON_EFT.php:19
+#: includes/payment/ON_PayPal.php:114
+#: includes/ON_Newsletter.php:106
+msgid "Send"
+msgstr "Gönder"
+
+#: includes/payment/ON_EFT.php:12
+msgid "Electronic Fon Transfer"
+msgstr "Elektronik Fon Transferi"
+
+#: includes/payment/ON_EFT.php:14
+msgid "Banc Accounts"
+msgstr "Banka Hesabı"
+
+#: includes/payment/ON_EFT.php:16
+msgid "Sender name"
+msgstr "Gönderen Adı"
+
+#: includes/payment/ON_EFT.php:17
+msgid "Sender name requried"
+msgstr "Gönderen adı gereklidir"
+
+#: includes/payment/ON_PayPal.php:107
+msgid "PayPal Express Checkout"
+msgstr "PayPal Ekspres Ödeme"
+
+#: includes/payment/ON_PayPal.php:108
+msgid "Save time. Checkout securely. Pay without sharing your financial information."
+msgstr "Vakit kazanın. Güvenli ödeme yapın. Finans bilgilerinizi paylaşmadan ödeme yapın"
+
+#: includes/payment/ON_PayPal.php:126
+msgid "Express Checkout"
+msgstr "Ekspress Ödeme"
+
+#: includes/ON_Dao.php:300
+msgid "Undefined Class Property: "
+msgstr "Tanımlanmamış Sınıf Özelliği"
+
+#: includes/ON_Dao.php:399
+#, php-format
+msgid "Query: %s must have a \"FROM\" clause"
+msgstr "Sorgu: %s \"FROM\" gereklidir"
+
+#: includes/ON_Dao.php:626
+msgid "Date/time type not implemented in the class"
+msgstr "Tarih/Zaman tipi bu sınıf içerisinde tanımlanmamış"
+
+#: includes/ON_Image.php:53
+msgid "Image"
+msgstr "Fotoğraf"
+
+#: includes/ON_Image.php:56
+#: includes/ON_File.php:53
+#: includes/ON_Banner.php:61
+#: includes/ON_Settings.php:134
+#, php-format
+msgid "Maximum file size is: %d KB"
+msgstr "Maksimum dosya boyutu: %d KB'dır"
+
+#: includes/ON_Image.php:59
+#: includes/ON_File.php:55
+#: includes/ON_Banner.php:63
+#: includes/ON_Settings.php:135
+msgid "File extension required in types:"
+msgstr "Geçerli dosya uzantıları:"
+
+#: includes/ON_Image.php:65
+#: includes/ON_File.php:61
+msgid "Upload"
+msgstr "Yükle"
+
+#: includes/ON_Image.php:67
+msgid "Permitted Extensions:"
+msgstr "İzin Verilen Uzantılar"
+
+#: includes/ON_Payment.php:76
+msgid "Payment Insert Failed"
+msgstr "Ödeme kaydı yapılamadı"
+
+#: includes/ON_Payment.php:204
+msgid "Payment Options"
+msgstr "Ödeme Seçenekleri"
+
+#: includes/ON_Payment.php:206
+msgid "PayPal"
+msgstr "PayPal"
+
+#: includes/ON_Payment.php:208
+#: includes/ON_Utils.php:247
+msgid "EFT"
+msgstr "EFT"
+
+#: includes/ON_Payment.php:209
+msgid "Check"
+msgstr "Çek"
+
+#: includes/ON_Payment.php:222
+msgid "Details"
+msgstr "Detay"
+
+#: includes/ON_News.php:67
+msgid "News title required"
+msgstr "Haber başlığı gereklidir"
+
+#: includes/ON_News.php:71
+msgid "News detail required"
+msgstr "Haber detayı gereklidir"
+
+#: includes/ON_Theme.php:85
+msgid "Last Picture"
+msgstr "Son Fotoğraf"
+
+#: includes/ON_Theme.php:90
+msgid "All Gallery"
+msgstr "Bütün Galeriler"
+
+#: includes/ON_Theme.php:122
+#: includes/ON_Theme.php:238
+msgid "News"
+msgstr "Haber"
+
+#: includes/ON_Theme.php:128
+msgid "All News"
+msgstr "Bütün Haberler"
+
+#: includes/ON_Theme.php:256
+msgid "Login sucessfull"
+msgstr "Giriş başarılı bir şekilde yapıldı"
+
+#: includes/ON_Theme.php:258
+msgid "Login failed, please control your username/password"
+msgstr "Giriş başarısız, lütfen kullanıcı adı/parola değerlerini kontrol ediniz"
+
+#: includes/ON_Theme.php:273
+msgid "Your information saved successfully"
+msgstr "Bilgileriniz başarılı bir şekilde kaydedildi"
+
+#: includes/ON_Theme.php:275
+msgid "Database Error: Insert Failed"
+msgstr "Veritabanı hatası: Kaydetme yapılamadı"
+
+#: includes/ON_Theme.php:289
+#: includes/ON_Theme.php:373
+#: includes/ON_Product.php:285
+msgid "New Products"
+msgstr "Yeni Ürünler"
+
+#: includes/ON_Theme.php:315
+#: includes/ON_Product.php:286
+msgid "Popular Products"
+msgstr "Popüler Ürünler"
+
+#: includes/ON_Theme.php:372
+msgid "Main Page"
+msgstr "Ana Sayfa"
+
+#: includes/ON_Theme.php:374
+msgid "New Member"
+msgstr "Yeni Üye"
+
+#: includes/ON_Theme.php:375
+msgid "My Basket"
+msgstr "Sepetim"
+
+#: includes/ON_Theme.php:376
+msgid "Support"
+msgstr "Destek"
+
+#: includes/ON_Theme.php:377
+msgid "Guarantiee"
+msgstr "Garanti"
+
+#: includes/ON_Theme.php:378
+msgid "About Us"
+msgstr "Hakkımızda"
+
+#: includes/ON_Theme.php:379
+msgid "Contact Us"
+msgstr "İletişim"
+
+#: includes/ON_Thumbnail.php:62
+#, php-format
+msgid "%s image file unsupported"
+msgstr "%s fotoğraf"
+
+#: includes/ON_Basket.php:159
+msgid "Total Price:"
+msgstr "Toplam Fiyat"
+
+#: includes/ON_Newsletter.php:105
+msgid "If you find a copy of this bulletin please provide an e-mail"
+msgstr "Bültenin bir kopyasını istiyorsanız lütfen e-posta alanını doldurun"
+
+#: includes/ON_Newsletter.php:120
+msgid "Bulletin Subject"
+msgstr "Bülten Konusu"
+
+#: includes/ON_Newsletter.php:121
+msgid "Subject required"
+msgstr "Konu gereklidir"
+
+#: includes/ON_Newsletter.php:123
+msgid "Bulletin Body"
+msgstr "Bülten İçeriği"
+
+#: includes/ON_Newsletter.php:125
+msgid "Bulletin body required"
+msgstr "Bülten içeriği gereklidir"
+
+#: includes/ON_User.php:148
+msgid "Billing Information"
+msgstr "Fatura Bilgileri"
+
+#: includes/ON_User.php:151
+msgid "Billing name required"
+msgstr "Fatura adı gereklidir"
+
+#: includes/ON_User.php:153
+msgid "Billing address required"
+msgstr "Fatura adresi gereklidir"
+
+#: includes/ON_User.php:158
+#: includes/ON_User.php:361
+msgid "City required"
+msgstr "Şehir gereklidir"
+
+#: includes/ON_User.php:160
+#: includes/ON_User.php:363
+msgid "Country"
+msgstr "Ülke"
+
+#: includes/ON_User.php:161
+#: includes/ON_User.php:364
+msgid "Country required"
+msgstr "Ülke gereklidir"
+
+#: includes/ON_User.php:164
+msgid "Telephone required"
+msgstr "Telefon gereklidir"
+
+#: includes/ON_User.php:334
+#: includes/ON_User.php:387
+msgid "Username required"
+msgstr "Kullanıcı adı gereklidir"
+
+#: includes/ON_User.php:336
+#: includes/ON_User.php:389
+#: includes/ON_Admin.php:164
+msgid "Password"
+msgstr "Parola"
+
+#: includes/ON_User.php:337
+#: includes/ON_User.php:390
+msgid "Password required"
+msgstr "Parola gereklidir"
+
+#: includes/ON_User.php:339
+msgid "Password Again"
+msgstr "Parola Tekrar"
+
+#: includes/ON_User.php:340
+msgid "Password again field"
+msgstr "Parola tekrar alanı"
+
+#: includes/ON_User.php:342
+msgid "Password and Password again field are different, please control"
+msgstr "Parola ve parola tekrar alanları farklı, lütfen kontrol edin"
+
+#: includes/ON_User.php:346
+msgid "E-mail required"
+msgstr "E-posta gereklidir"
+
+#: includes/ON_User.php:347
+msgid "E-mail must be a valid address"
+msgstr "E-posta geçerli bir adres olmalıdır"
+
+#: includes/ON_User.php:349
+msgid "First Name"
+msgstr "Ad"
+
+#: includes/ON_User.php:350
+msgid "First name required"
+msgstr "Ad gereklidir"
+
+#: includes/ON_User.php:352
+msgid "Last Name"
+msgstr "Soyad"
+
+#: includes/ON_User.php:353
+msgid "Last name required"
+msgstr "Soyad gereklidir"
+
+#: includes/ON_User.php:356
+msgid "Address required"
+msgstr "Adres gereklidir"
+
+#: includes/ON_User.php:367
+msgid "Telephone required!"
+msgstr "Telefon gereklidir"
+
+#: includes/ON_User.php:369
+msgid "Please enter telephone according to format"
+msgstr "Telefon alanını lütfen biçime uygun olarak doldurun"
+
+#: includes/ON_User.php:370
+msgid "Format: Country Code - City Code - Tel Number"
+msgstr "Biçim: Ülke Kodu - Şehir Kodu - Telefon Numarası"
+
+#: includes/ON_User.php:450
+msgid "Your IP Banned for 15 minutes, if you lost your password use lost password page"
+msgstr "IP adresiniz 15 dakika süreliğine banlanmıştır, eğer şifrenizi kaybetiyseniz lütfen şifre hatırlatma sayfasını kullanınız"
+
+#: includes/ON_File.php:51
+#: includes/ON_Banner.php:59
+msgid "File"
+msgstr "Dosya"
+
+#: includes/ON_File.php:87
+msgid "Upload error: file upload failed"
+msgstr "Yükleme hatası: doysa yükleme başarısız"
+
+#: includes/ON_Product.php:51
+msgid "Add Image"
+msgstr "Fotoğraf Ekle"
+
+#: includes/ON_Product.php:254
+msgid "Product name required"
+msgstr "Ürün adı gereklidir"
+
+#: includes/ON_Product.php:257
+msgid "Product Category"
+msgstr "Ürün kategorisi"
+
+#: includes/ON_Product.php:258
+msgid "Product Category required"
+msgstr "Ürün kategorisi gereklidir"
+
+#: includes/ON_Product.php:264
+msgid "Price required!"
+msgstr "Fiyat gereklidir"
+
+#: includes/ON_Product.php:265
+msgid "Price must be numeric"
+msgstr "Fiyat sayısal olmalıdır"
+
+#: includes/ON_Product.php:270
+msgid "Tags"
+msgstr "Etiket"
+
+#: includes/ON_Product.php:288
+msgid "Show in the Page:"
+msgstr "Sayfalarında Göster:"
+
+#: includes/ON_Product.php:301
+msgid "Search:"
+msgstr "Ara:"
+
+#: includes/ON_Product.php:303
+msgid "Please enter required field(s)"
+msgstr "Lütfen gerekli alan veya alanları doldurun"
+
+#: includes/ON_Product.php:330
+msgid "Your Subscription"
+msgstr "Aboneliğiniz"
+
+#: includes/ON_Admin.php:162
+msgid "E-mail address regular expression failed"
+msgstr "E-posta adresi geçerlilik testini sağlamıyor"
+
+#: includes/ON_Banner.php:69
+msgid "Banner Location"
+msgstr "Reklam Konumu"
+
+#: includes/ON_Banner.php:72
+msgid "Url must be filled!"
+msgstr "Web site adresi gereklidir"
+
+#: includes/ON_Banner.php:84
+msgid "top banner (max 468 x 60)"
+msgstr "üst reklam (mak. 468 x 60)"
+
+#: includes/ON_Banner.php:85
+msgid "left banner (max 180 x 150)"
+msgstr "sol reklam (mak. 180 x 150)"
+
+#: includes/ON_Banner.php:86
+msgid "right banner (max 160 x 600)"
+msgstr "sağ reklam (mak. 160 x 600)"
+
+#: includes/ON_Banner.php:114
+msgid "Upload error: banner upload failed"
+msgstr "Yükeleme Hatası: reklam yüklemesi başarısız"
+
+#: includes/ON_QuickForm.php:54
+msgid "required fields"
+msgstr "gerekli alanlar"
+
+#: includes/ON_QuickForm.php:55
+msgid "Please correct all errors and try again!"
+msgstr "Lütfen bütün hataları düzeltin ve tekrar deneyin"
+
+#: includes/ON_QuickForm.php:150
+msgid "Calendar..."
+msgstr "Takvim..."
+
+#: includes/ON_QuickForm.php:275
+msgid "Up"
+msgstr "Yukarı"
+
+#: includes/ON_QuickForm.php:277
+msgid "Down"
+msgstr "Aşağı"
+
+#: includes/ON_QuickForm.php:365
+msgid "Please seperate tags by comma"
+msgstr "Lütfen etiketleri virgül ile ayırın"
+
+#: includes/ON_Display.php:50
+msgid "Product Details"
+msgstr "Ürün Detayı"
+
+#: includes/ON_Display.php:61
+msgid "Add Basket"
+msgstr "Sepete Ekle"
+
+#: includes/ON_Display.php:72
+msgid "Delete from Favorites"
+msgstr "Favorilerden Sil"
+
+#: includes/ON_Display.php:94
+msgid "Already inserted to your subscriptions"
+msgstr "Aboneliğiniz eklenmiş durumda"
+
+#: includes/ON_Display.php:94
+msgid "Delete Subscriptions"
+msgstr "Aboneliği Sil"
+
+#: includes/ON_Display.php:95
+msgid "Not in the stock"
+msgstr "Stokta bulunmuyor"
+
+#: includes/ON_Display.php:95
+msgid "Alert available in the stock"
+msgstr "Stoğa girdiğinde haber ver"
+
+#: includes/ON_Display.php:101
+msgid "Recomendations"
+msgstr "Tavsiyeler"
+
+#: includes/ON_Display.php:112
+#: includes/ON_Display.php:131
+msgid "Store"
+msgstr "Dükkan"
+
+#: includes/ON_Utils.php:238
+msgid "Paypal Direct Payment"
+msgstr "Paypal Doğrudan Ödeme"
+
+#: includes/ON_Utils.php:241
+msgid "Paypal Express Checkout"
+msgstr "Paypal Ekspres Ödeme"
+
+#: includes/ON_Utils.php:244
+msgid "Post Check"
+msgstr "Posta Çeki"
+
+#: includes/ON_Utils.php:288
+msgid "Payment Cancel"
+msgstr "Ödeme İptal"
+
+#: includes/ON_Utils.php:291
+msgid "Payment Received"
+msgstr "Ödeme Alındı"
+
+#: includes/ON_Utils.php:296
+msgid "Payment Waiting"
+msgstr "Ödeme Bekliyor"
+
+#: includes/ON_Utils.php:305
+msgid "In the supply process"
+msgstr "Tedarik Edilme Aşamasında"
+
+#: includes/ON_Utils.php:308
+msgid "In the cargo process"
+msgstr "Kargoya verildi"
+
+#: includes/ON_Utils.php:311
+msgid "Cargo delivered"
+msgstr "Kargo teslim edildi"
+
+#: includes/ON_Utils.php:412
+msgid "E-Bulletin membership"
+msgstr "E-Bülten üyeliği"
+
+#: includes/ON_Utils.php:413
+msgid "Register"
+msgstr "Kayıt"
+
+#: includes/ON_Utils.php:415
+msgid "Please control your mailbox for activation"
+msgstr "Aktivasyon için lütfen mail kutunuzu kontrol ediniz"
+
+#: includes/ON_Settings.php:118
+msgid "Site Name"
+msgstr "Site Adı"
+
+#: includes/ON_Settings.php:120
+msgid "Site Title"
+msgstr "Site Başlığı"
+
+#: includes/ON_Settings.php:122
+msgid "Keywords"
+msgstr "Anahtar Kelimeler"
+
+#: includes/ON_Settings.php:126
+msgid "Slogan Text"
+msgstr "Slogan Metni"
+
+#: includes/ON_Settings.php:129
+msgid "Theme"
+msgstr "Tema"
+
+#: includes/ON_Settings.php:131
+msgid "Logo"
+msgstr "Logo"
+
+#: includes/ON_Settings.php:140
+msgid "Terms of Usage"
+msgstr "Kullanım Politikası"
+
+#: includes/ON_Settings.php:142
+msgid "Bank/Payment Accounts"
+msgstr "Banka/Ödeme Bilgileri"
+
+#: includes/ON_Settings.php:144
+msgid "Guarantee Policy"
+msgstr "Garanti Politikası"
+
+#: includes/ON_Settings.php:146
+msgid "Refunding Policy"
+msgstr "İade Politikası"
+
+#: includes/ON_Settings.php:185
+msgid "Upload error: logo upload failed"
+msgstr "Yükleme hatası: logo yüklemesi başarısız"
+
+#: includes/ON_Mail.php:57
+msgid "E-Bulletin Subscription"
+msgstr "E-bülten Üyeliği"
+
+#: payment/ccard.php:9
+#: basket.php:13
+msgid "Please login to your account"
+msgstr "Lütfen hesabınıza giriş yapın"
+
+#: login.php:13
+msgid "You are already logged in"
+msgstr "Giriş yapmış durumdasınız"
+
+#: user.php:10
+msgid "You are already logged in, please use <a href=\"profile.php\">profile page</a>"
+msgstr "Giriş yapmış durumdasınız, lütfen <a href=\"profile.php\">profil</a> sayfasını kullanın"
+
+#: slides.php:39
+msgid "Start"
+msgstr "Başla"
+
+#: slides.php:40
+msgid "Stop"
+msgstr "Dur"
+
+#: slides.php:41
+msgid "Display"
+msgstr "Göster"
+
+#: slides.php:42
+msgid "Previous"
+msgstr "Önceki"
+
+#: slides.php:43
+msgid "Next"
+msgstr "Sonraki"
+
+#: basket.php:25
+msgid "Basket product counts updated successfully"
+msgstr "Sepet ürün sayıları başarılı bir şekilde güncellendi"
+
+#: basket.php:49
+msgid "Product added to your basket sucessfully"
+msgstr "Ürün başarılı bir şekilde sepete eklendi"
+
+#: basket.php:51
+msgid "Product add failed, basket insert fail"
+msgstr "Ürünü sepete ekleme başarısız oldu"
+
+#: basket.php:60
+msgid "Product deleted from basket sucessfully"
+msgstr "Ürün başarılı bir şekilde sepetten silindi"
+
+#: basket.php:87
+#: includes/ON_Basket.php:175
+msgid "Total:&nbsp;"
+msgstr "Toplam:&nbsp;"
+
+#: basket.php:88
+msgid "Update Counts"
+msgstr "Adet Güncelle"
+
+#: basket.php:92
+msgid "Not found any product in your basket"
+msgstr "Sepete eklenmiş ürün bulunamadı"
+
+#: profile.php:12
+msgid "Login failed, please relogin with your username/password"
+msgstr "Giriş başarısız, lütfen kullanıcı adı/şifreniz ile tekrar deneyin"
+
+#: admin/error_logs.php:11
+msgid "Log Value"
+msgstr "Log İçeriği"
+
+#: admin/error_logs.php:16
+msgid "Total Log Count:"
+msgstr "Toplam Log Sayısı"
+
+#: admin/error_logs.php:19
+msgid "Log records not found"
+msgstr "Log kaydı bulunamadı"
+
+#: admin/init.php:46
+#: includes/ON_Payment.php:312
+#: includes/ON_Payment.php:393
+msgid "Order Completed"
+msgstr "Tamamlanmış Sipariş"
+
+#: admin/init.php:47
+#: includes/ON_Payment.php:309
+#: includes/ON_Payment.php:394
+msgid "Order Cancelled"
+msgstr "İptal Edilmiş Sipariş"
+
+#: admin/init.php:52
+msgid "Error Reports"
+msgstr "Hata Raporları"
+
+#: admin/init.php:59
+msgid "Store Information"
+msgstr "Site Bilgileri"
+
+#: admin/init.php:60
+msgid "Payment Gateway"
+msgstr "Ödeme Geçit Arayüzü"
+
+#: admin/init.php:61
+msgid "Payment Accounts"
+msgstr "Ödeme Hesabı"
+
+#: admin/init.php:62
+msgid "My Information"
+msgstr "Bilgilerim"
+
+#: admin/payment_account.php:24
+msgid "Payment account updated successfully"
+msgstr "Ödeme hesabı başarılı bir şekilde güncellendi"
+
+#: admin/payment_account.php:28
+msgid "Payment account update failed"
+msgstr "Ödeme hesap güncellemesi yapılamadı"
+
+#: admin/payment_account.php:33
+msgid "Payment account inserted successfully"
+msgstr "Ödeme hesabı başarılı bir şekilde kaydedildi"
+
+#: admin/payment_account.php:36
+msgid "Payment account insert failed"
+msgstr "Ödeme hesap kaydı yapılamadı"
+
+#: admin/list_payment_gateways.php:15
+msgid "Selected payment gateway deleted successfully"
+msgstr "Seçilen ödeme geçidi başarılı bir şekilde silindi"
+
+#: admin/list_payment_gateways.php:28
+msgid "Selected payment gateway active/passive changed successfully"
+msgstr "Seçilen ödeme geçidi başarılı bir şekilde aktif/pasif hale getirildi"
+
+#: admin/list_payment_gateways.php:41
+msgid "Selected payment gateway mode changed successfully"
+msgstr "Seçilen ödeme geçidinin modu başarılı bir şekilde değiştirildi"
+
+#: admin/list_payment_gateways.php:58
+msgid "Change Active/Passive"
+msgstr "Aktif/Pasif Değiştir"
+
+#: admin/list_payment_gateways.php:59
+msgid "Change Real/Test Mode"
+msgstr "Gerçek/Test Modu Değiştir"
+
+#: admin/list_payment_gateways.php:62
+#: admin/list_payment_accounts.php:33
+msgid "Title"
+msgstr "Başlık"
+
+#: admin/list_payment_gateways.php:62
+#: includes/ON_PaymentGateway.php:77
+msgid "Client ID"
+msgstr "Müşteri ID"
+
+#: admin/list_payment_gateways.php:62
+#: admin/list_payment_gateways.php:66
+msgid "Active"
+msgstr "Aktif"
+
+#: admin/list_payment_gateways.php:62
+msgid "Mode"
+msgstr "Mod"
+
+#: admin/list_payment_gateways.php:66
+msgid "Passive"
+msgstr "Pasif"
+
+#: admin/list_payment_gateways.php:67
+msgid "Test Mode"
+msgstr "Test Modu"
+
+#: admin/list_payment_gateways.php:67
+msgid "Real Mode"
+msgstr "Gerçek Mod"
+
+#: admin/list_payment_gateways.php:71
+msgid "Total Payment Gateway Count:"
+msgstr "Toplam ödeme geçit sayısı"
+
+#: admin/list_payment_gateways.php:74
+msgid "Payment gateway record(s) not found"
+msgstr "Ödeme geçit kayıt veya kayıtları bulunamadı"
+
+#: admin/logout.php:15
+msgid "Session close failed"
+msgstr "Oturum kapatması başarısız"
+
+#: admin/payment_details.php:69
+msgid "Payment Sent Date"
+msgstr "Ödeme Gönderim Tarihi"
+
+#: admin/payment_details.php:76
+msgid "Billing Country"
+msgstr "Fatura Ülke"
+
+#: admin/payment_details.php:78
+#: includes/payment/ON_CCard.php:132
+#: includes/payment/ON_EFT.php:34
+msgid "Note"
+msgstr "Not"
+
+#: admin/payment_details.php:85
+msgid "Not defined"
+msgstr "Tanımlanmamış"
+
+#: admin/payment_gateway.php:24
+msgid "Payment gateway updated successfully"
+msgstr "Ödeme geçidi başarılı bir şekilde güncellendi"
+
+#: admin/payment_gateway.php:28
+msgid "Payment gateway update failed"
+msgstr "Ödeme geçit güncellemesi yapılamadı"
+
+#: admin/payment_gateway.php:33
+msgid "Payment gateway inserted successfully"
+msgstr "Ödeme geçidi başarı bir şekilde kaydedildi"
+
+#: admin/payment_gateway.php:36
+msgid "Payment gateway insert failed"
+msgstr "Ödeme geçit kaydı yapılamadı"
+
+#: admin/view.php:13
+#: admin/delete.php:14
+msgid "Logo file not found or permission denied from filesytem"
+msgstr "Logo dosyası bulunamadı veya sistem tarafından erişim reddedildi"
+
+#: admin/list_payment_accounts.php:15
+msgid "Selected payment account deleted successfully"
+msgstr "Seçilen ödeme hesabı başarılı bir şekilde silindi"
+
+#: admin/list_payment_accounts.php:33
+#: includes/payment/ON_EFT.php:24
+msgid "Account"
+msgstr "Hesap"
+
+#: admin/list_payment_accounts.php:40
+msgid "Total Payment Account Count:"
+msgstr "Toplam Ödeme Hesap Sayısı"
+
+#: admin/list_payment_accounts.php:43
+msgid "Payment account record(s) not found"
+msgstr "Ödeme hesap kaydı bulunamadı"
+
+#: admin/list_payments.php:16
+msgid "Payment status marked as received"
+msgstr "Ödeme durumu alındı olarak işaretlendi"
+
+#: admin/list_payments.php:24
+msgid "Order status marked as completed"
+msgstr "Sipariş durumu tamamlandı olarak işaretlendi"
+
+#: admin/list_payments.php:32
+msgid "Order status marked as cancelled"
+msgstr "Sipariş durumu iptal edildi olarak işaretlendi"
+
+#: admin/list_users.php:30
+msgid "Post Code:"
+msgstr "Posta Kodu:"
+
+#: admin/list_users.php:31
+msgid "City/Country:"
+msgstr "Şehir/Ülke:"
+
+#: admin/delete.php:12
+msgid "Logo file deleted successfully"
+msgstr "Logo dosyası başarılı bir şekilde silindi"
+
+#: includes/ON_Tag.php:136
+msgid "Tag"
+msgstr "Etiket"
+
+#: includes/ON_PaymentGateway.php:68
+msgid "Gateway Title"
+msgstr "Geçit Arayüzü Başlığı"
+
+#: includes/ON_PaymentGateway.php:69
+msgid "Payment gateway title required"
+msgstr "Ödeme geçit arayüzü başlığı gereklidir"
+
+#: includes/ON_PaymentGateway.php:78
+msgid "Client ID required"
+msgstr "Müşteri ID gereklidir"
+
+#: includes/ON_PaymentGateway.php:80
+msgid "Test URL"
+msgstr "Test Adresi (Test URL)"
+
+#: includes/ON_PaymentGateway.php:82
+msgid "Real URL"
+msgstr "Gerçek Adres (Real URL)"
+
+#: includes/ON_PaymentGateway.php:83
+msgid "Real URL address required"
+msgstr "Gerçek adres gereklidir"
+
+#: includes/payment/ON_EFT.php:30
+msgid "Send Date"
+msgstr "Gönderim Tarihi"
+
+#: includes/payment/ON_EFT.php:32
+msgid "Send date requried"
+msgstr "Gönderim tarihi gereklidir"
+
+#: includes/ON_Payment.php:259
+msgid "With CCard"
+msgstr "Kredi Kartı ile"
+
+#: includes/ON_Payment.php:274
+#: includes/ON_Payment.php:340
+msgid "Undefined"
+msgstr "Tanımlanmamış"
+
+#: includes/ON_Payment.php:316
+msgid "Order Begin"
+msgstr "Sipariş Başladı"
+
+#: includes/ON_Payment.php:400
+msgid "Payment Type/Status"
+msgstr "Ödeme Tipi/Durumu"
+
+#: includes/ON_Payment.php:400
+msgid "Order Status"
+msgstr "Sipariş Durumu"
+
+#: includes/ON_Theme.php:249
+#: includes/ON_Theme.php:405
+#: includes/ON_Theme.php:427
+msgid "Faq"
+msgstr "SSS"
+
+#: includes/ON_Theme.php:286
+msgid "Your information updated successfully"
+msgstr "Bilgileriniz başarılı bir şekilde güncellendi"
+
+#: includes/ON_Theme.php:288
+msgid "Database Error: Update Failed"
+msgstr "Veritabanı hatası: güncelleme yapılamadı"
+
+#: includes/ON_Theme.php:302
+msgid "Your information saved successfully, please control your mailbox for activation"
+msgstr "Bilgileriniz başarılı bir şekilde kaydedildi, lütfen eposta kutunuzu kontrol ediniz"
+
+#: includes/ON_Theme.php:407
+#: includes/ON_Theme.php:429
+msgid "Contact"
+msgstr "İletişim"
+
+#: includes/ON_Theme.php:423
+#: includes/ON_Theme.php:424
+msgid "Policies"
+msgstr "Politikalar"
+
+#: includes/ON_User.php:313
+msgid "Username name already exists, please change with a new one."
+msgstr "Böyle bir kullanıcı adı kayıtlı, lütfen başka bir kullanıcı adı seçiniz"
+
+#: includes/ON_Product.php:407
+msgid "Your Stock Alarm Subscription"
+msgstr "Stok Alarm Üyeliğiniz"
+
+#: includes/ON_PaymentAccount.php:67
+msgid "Account Title"
+msgstr "Hesap Başlığı"
+
+#: includes/ON_PaymentAccount.php:68
+msgid "Account title required"
+msgstr "Hesap başlığı gereklidir"
+
+#: includes/ON_PaymentAccount.php:70
+msgid "Account Detail"
+msgstr "Hesap Detayı"
+
+#: includes/ON_PaymentAccount.php:71
+msgid "Account detail required"
+msgstr "Hesap detayı gereklidir"
+
+#: share.php:11
+msgid "First/Last Name"
+msgstr "Ad/Soyad"
+
+#: share.php:12
+#: contact.php:14
+msgid "Name required"
+msgstr "Ad gereklidir"
+
+#: share.php:14
+msgid "Your E-mail"
+msgstr "E-posta"
+
+#: share.php:18
+msgid "Friend E-mail(s)"
+msgstr "Arkadaş E-post Adresleri"
+
+#: share.php:19
+msgid "Friend e-mail(s) required"
+msgstr "Arkadaş e-posta adresleri gereklidir"
+
+#: share.php:20
+msgid "You can use comma to seperate different emails"
+msgstr "Virgül ile birden fazla adresi ayırabilirsiniz"
+
+#: share.php:30
+#: share.php:36
+#, php-format
+msgid "Product recommend to you from %s"
+msgstr "%s tarafından ürün tavsiyesi yapıldı"
+
+#: share.php:43
+msgid "E-mail(s) sent to your friend address, thank you"
+msgstr "E-posta(lar) gönderildi, teşekkürler"
+
+#: share.php:45
+msgid "E-mail(s) failed, something wrong for system please call tecnical support"
+msgstr "E-posta gönderimi başarısız, lütfen teknik destek isteyiniz"
+
+#: contact.php:18
+msgid "Please check email, e-mail is not a valid e-mail address"
+msgstr "E-posta adresini kontrol ediniz, geçerlilik testini geçemedi"
+
+#: contact.php:20
+msgid "Subject"
+msgstr "Konu"
+
+#: contact.php:23
+msgid "Message"
+msgstr "Mesaj"
+
+#: contact.php:24
+msgid "Message required"
+msgstr "Mesaj gereklidir"
+
+#: contact.php:35
+msgid "reCAPTCHA error: "
+msgstr "reCAPTCHA hata: "
+
+#: contact.php:44
+msgid "Your contact request has been successfully submitted"
+msgstr "İletişim bilgileriniz başarılı bir şekilde gönderildi"
+
+#: contact.php:46
+msgid "Something wrong, mail function failed."
+msgstr "E-posta işlevi başarısız, gönderilemedi."
+
+#: assets/themes/default/popup.php:17
+msgid "Output not found"
+msgstr "Çıktı bulunamadı"
+
+#: login.php:31
+#, php-format
+msgid "Please wait we will return to entry point, if not work, <a href=\"%s\">click here</a>"
+msgstr "Lütfen bekleyin giriş yaptığınız noktaya yönlendiriliyorsunuz, yönlendirme çalışmaz ise <a href=\"%s\">kaldığınız yere dönmek için tıklayınız</a>"
+
+#: user.php:10
+#, php-format
+msgid "You are already logged in, please use <a href=\"%s\">profile page</a>"
+msgstr "Giriş yapmış durumdasınız, bilgilerinizi düzenlemek için lütfen <a href=\"%s\">bilgilerim sayfasını</a> kullanın"
+
+#: logout.php:15
+msgid "Your session closed successfuly"
+msgstr "Oturumunuz başarılı bir şekilde kapatıldı"
+
+#: admin/stat.php:49
+msgid "Anon. View"
+msgstr "Anonim İzleme"
+
+#: admin/stat.php:49
+msgid "Anonymous View"
+msgstr "Anonim İzleme"
+
+#: admin/stat.php:50
+msgid "User View"
+msgstr "Üye İzleme"
+
+#: admin/stat.php:51
+msgid "Anon. Share"
+msgstr "Anonim Paylaşma"
+
+#: admin/stat.php:51
+msgid "Anonymous Share"
+msgstr "Anonim Paylaşma"
+
+#: admin/stat.php:52
+msgid "User Share"
+msgstr "Üye Paylaşma"
+
+#: admin/payment_details.php:68
+msgid "Card Last 4 Digit"
+msgstr "Kartın Son 4 Hanesi"
+
+#: admin/list_users.php:17
+msgid "User deleted successfully"
+msgstr "Üye başarılı bir şekilde silindi"
+
+#: includes/ON_Tag.php:137
+msgid "Tag name required"
+msgstr "Etiket adı gereklidir"
+
+#: includes/payment/ON_Account.php:11
+msgid "Payment Account"
+msgstr "Ödeme Hesabı"
+
+#: includes/ON_Payment.php:266
+msgid "With Gateway"
+msgstr "Ödeme Geçit Arayüzü İle"
+
+#: includes/ON_Payment.php:275
+msgid "With Account"
+msgstr "Ödeme Hesap ile"
+
+#: includes/ON_Theme.php:340
+#: includes/ON_Display.php:183
+msgid "Share"
+msgstr "Paylaş"
+
+#: includes/ON_Theme.php:398
+msgid "Profile"
+msgstr "Bilgilerim"
+
+#: includes/ON_Locale.php:59
+msgid "January"
+msgstr "Ocak"
+
+#: includes/ON_Locale.php:59
+msgid "February"
+msgstr "Şubat"
+
+#: includes/ON_Locale.php:59
+msgid "March"
+msgstr "Mart"
+
+#: includes/ON_Locale.php:59
+msgid "April"
+msgstr "Nisan"
+
+#: includes/ON_Locale.php:60
+msgid "May"
+msgstr "Mayıs"
+
+#: includes/ON_Locale.php:60
+msgid "June"
+msgstr "Haziran"
+
+#: includes/ON_Locale.php:60
+msgid "July"
+msgstr "Temmuz"
+
+#: includes/ON_Locale.php:60
+msgid "August"
+msgstr "Ağustos"
+
+#: includes/ON_Locale.php:61
+msgid "September"
+msgstr "Eylül"
+
+#: includes/ON_Locale.php:61
+msgid "October"
+msgstr "Ekim"
+
+#: includes/ON_Locale.php:61
+msgid "November"
+msgstr "Kasım"
+
+#: includes/ON_Locale.php:61
+msgid "December"
+msgstr "Aralık"
+
+#: includes/ON_User.php:329
+msgid "Username name already exists, please change it with a new one."
+msgstr "Üye adı kayıtlı durumda, lütfen başka bir ad ile deneyin"
+
+#: includes/ON_Product.php:374
+msgid "Product Name/Detail"
+msgstr "Ürün Adı/Detay"
+
+#: share.php:55
+#, php-format
+msgid "Share a link with you from %s"
+msgstr "%s sizinle bir adres paylaşıyor"
+
+#: product_search.php:28
+msgid "Detail"
+msgstr "Detay"
+

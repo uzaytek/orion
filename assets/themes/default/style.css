@@ -1,0 +1,382 @@
+
+
+body {
+    margin: 0 auto;
+    padding:0;
+    font:0.9em Verdana, Helvetica, sans-serif;
+    background: #e5e5e5;
+}
+
+h2 {
+	 background-image: url('./images/titleback.png');
+    background-repeat:no-repeat;
+    background-position:bottom;     
+    width:213px;
+    height:41px;
+    margin:0;
+    padding:0;
+	 font:0.9em Verdana, Helvetica, sans-serif;
+}
+
+h2 p {
+    margin:0;
+    padding:10px 0 0 25px;
+	 background-image:url('./images/titlebullet.png');
+	 background-repeat: no-repeat;
+	 background-position: 5px 12px;
+}
+
+.price {
+    font:bold 1.2em Verdana, Helvetica, sans-serif;color:#c83b00;
+}
+
+.button {
+	 background-image:url('./images/buttonback.png');
+	 background-repeat: no-repeat;
+    text-align:center;
+    padding-top:2px;
+    width:81px;
+    height:23px;
+    margin:6px;
+}
+
+.button a, .button a:link, .button a:visited, .button li a:hover {
+	 font:1em Verdana, Helvetica, sans-serif;   
+    color:#fff; 
+    text-decoration:none;
+}
+
+.button2 {
+	 background-image:url('./images/buttonback2.png');
+	 background-repeat: no-repeat;
+    text-align:center;
+    padding-top:2px;
+    width:81px;
+    height:23px;
+    margin:6px;
+}
+
+.button2 a, .button2 a:link, .button2 a:visited, .button2 li a:hover {
+	 font:1em Verdana, Helvetica, sans-serif;   
+    color:#fff; 
+    text-decoration:none;
+}
+
+#container
+{
+	margin:15px auto 0;
+   position: relative;
+   width:980px;
+   height:1400px;
+	background: #fff;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+}
+
+#header {
+	 background-image: url('./images/header.png');
+    background-repeat:no-repeat;
+    background-position:bottom;     
+    width:980px;
+    height:130px;
+}
+
+/* logo site name */
+
+#logo {
+    float:left;
+    padding:20px 0 0 20px;
+}
+
+#header h1 {
+    float:left;
+    margin: 0; 
+	 font-family: Arial, Times, Sans;
+    font-size: 3em;
+    color: #2c2c2c;
+    padding:40px 0 0 10px;
+}
+
+/* site slogan */
+#slogan {
+    clear:both;
+    margin: 0; 
+	 font-family: Georgia, Times, Sans;
+    font-size: 1em;
+    color: #444;
+    text-align:right;
+    height:40px;
+    padding:0 20px 0px 0;
+}
+
+/* top menu */
+
+#topnav {
+	 background-image: url('./images/mainmenu.gif');
+    background-repeat:no-repeat;
+    background-position:center; 
+    width:980px;
+    height:44px;
+	 font:bold 1em Arial, Helvetica, sans-serif;
+}
+
+#topnav ul {
+	 padding: 10px;
+    padding-top:15px;
+	 margin: 0px;
+	 list-style-type: none;
+}
+
+#topnav li {
+	 display: inline;
+	 list-style-type: none;
+	 margin-left: 12px;
+    padding-right:15px;
+    border-right:1px solid #c63800;
+}
+
+#topnav li a:link{
+    color: #fff;
+	 text-decoration: none;
+	 padding-bottom: 2px; 
+}
+#topnav li  a:visited {
+    color: #fff;
+	 text-decoration: none;
+}
+
+#topnav li a:hover {
+	 border-bottom-width: 2px;
+	 border-bottom-style: solid;
+	 border-bottom-color: #fff;
+}
+
+/* top menu end */
+
+#content-container
+{
+	float: left;
+	width: 980px;
+   height: 100%;
+   position: absolute;
+   left:0;
+}
+
+#left-boxes {
+	float: left;
+	width: 210px;
+   padding:10px 0 0 10px;
+	margin:0;
+	display: inline;
+}
+
+#left-boxes ul {
+	 margin: 0;
+	 padding: 0;
+}
+
+#left-boxes ul li {
+    margin:0;
+	 padding: 0;
+	 list-style-type: none;
+}
+
+#cat-box ul li {
+    padding:4px;
+    border-bottom:1px #dedede solid;
+}
+
+#cat-box li a, #cat-box li a:link, #cat-box li a:visited, #cat-box li a:hover {
+	 font:0.8em Verdana, Helvetica, sans-serif;   
+    color:#515151; 
+    text-decoration:none;
+    padding:0 0 0 15px;
+	 background-image:url('./images/catbullet.png');
+	 background-repeat: no-repeat;
+	 background-position: 0px 0px;
+}
+
+#login-box .register {
+    margin-left:10px;
+}
+
+#login-box .register table td {
+    padding:1px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+#login-box input {
+    width:8em;
+}
+
+#login-box li {
+    padding-right: 20px;
+}
+
+#login-box li a, #login-box li a:link, #login-box li a:visited, #login-box li a:hover {
+	 font:0.9em Verdana, Helvetica, sans-serif;   
+    color:#515151; 
+    text-decoration:none;
+}
+
+#content {
+	float: left;
+	width: 500px;
+	padding: 10px 0 0 10px;
+	margin: 0;
+}
+
+#content h2 { margin: 0; }
+
+#content h3 {
+    font:bold 1.1em Tahoma, Helvetica, Arial;
+    color:#375b91;
+    border-bottom:1px solid #d9e6f0;
+}
+
+
+#aside {
+	float: right;
+	width: 220px;
+   padding:10px 0 0 10px;
+	margin: 0;
+	display: inline;
+}
+
+#aside h3 { margin: 0; }
+
+#news-box {
+	 font:0.9em Verdana, Helvetica, sans-serif;   
+    color:#515151; 
+}
+
+#news-box h2 p {
+	 background-position: 5px 10px;
+}
+
+#news-box ul {
+   margin:0;padding:0;
+}
+
+#news-box li {
+    margin:0;padding:0;
+    padding-right: 20px;
+	 list-style-type: none;
+}
+
+#news-box a, #news-box a:link, #news-box a:visited, #news-box a:hover {
+	 font:bold 0.9em Verdana, Helvetica, sans-serif;   
+    color:#515151; 
+    text-decoration:none;
+}
+
+
+#footer {
+	clear: left;
+   text-align:center;
+	padding: 20px;
+	height: 1%;
+}
+
+#footer li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+#footer li a, #footer li a:link, #footer li a:visited, #footer li a:hover {
+	 font:0.8em Verdana, Helvetica, sans-serif;   
+    color:#515151; 
+    text-decoration:none;
+}
+
+.star {
+    color:red;
+}
+
+.warn {
+    color:red;
+    font-size: .7em;
+}
+
+
+.register {
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.register table {
+    margin:0px;
+    padding:0px;
+    border-collapse: collapse; 
+    width:96%;
+    background-color:#ffffff;
+}
+
+.register table tr.title td {
+    border-collapse: collapse; 
+    padding:6px;
+    background-color:#F3F3F3;
+    font:bold 1.4em Verdana, Helvetica;
+    color:#000000;    
+}
+
+.register table td {
+    border-collapse: collapse; 
+    padding:6px;
+    color:#000000;
+    border-bottom:1px #dedede solid;
+}
+
+
+/**
+ * Kona Coast
+ *
+ * F4E9DF,8F776A,4F4E57,66AEF3,C7EDE8
+ * http://www.colourlovers.com/palette/586482/Kona_Coast
+ *
+ **/
+
+#zebraTable {
+    border-collapse:collapse;
+    padding:0px;
+    width:95%;
+}
+
+#zebraTable tbody tr td {
+    padding: 4px;
+    font:0.8em Verdana, Tahoma,Arial;
+}
+
+#zebraTable tbody tr.selected td {
+    background-color: #FFC9D6;
+    color: #ffffff;
+    font:bold 1.1em Georgia, Arial, Helvetica;
+}
+
+#zebraTable tbody tr.title td {
+    font:bold 1.1em Tahoma, Helvetica, Arial;
+    color:#375b91;
+    border-bottom:1px solid #d9e6f0;
+}
+
+#zebraTable tr.row {
+    background-color: #FFFFFF;
+}
+
+#zebraTable tr.altrow {
+    background:#F0F7E8;
+    border-bottom:1px solid #E7EEDF;    
+    border-top:1px solid #E7EEDF;
+}
+
+#zebraTable A.btn, A.btn:link, A.btn:active, A.btn:visited {
+    font:bold .9em Verdana; color:#515151;
+    text-decoration:none;padding:3px;border:1px solid #dedede; background-color:#dedede;
+    background-image:url(../img/btn.gif);
+}
+
+#zebraTable A.btn:hover {
+    color:#000;
+}
