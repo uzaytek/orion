@@ -35,11 +35,11 @@ define('PT_UPLOAD',    PT_SITE . 'uploads/');
 define('LC_UPLOAD',    LC_SITE . 'uploads/');
 
 /* ---[ DATABASE & EMAIL; prefix DB for database, EM for email  ]------------------------------- */
-define('DB_DBASE',    'uzaytek_orion');
+define('DB_DBASE',    'dbdata');
 define('DB_HOST',     'localhost');
-define('DB_USER',     'root');//postgres
-define('DB_PASSWORD', 'mimar');
-define('EM_ADMIN',    'uzaytek+orion@gmail.com');
+define('DB_USER',     'dbuser');//postgres
+define('DB_PASSWORD', 'dbpass');
+define('EM_ADMIN',    'admin@');
 
 $prefix = '';
 // tables
