@@ -1,11 +1,11 @@
 <?php
 
 //.:/usr/share/php:/usr/share/pear
-ini_set('include_path', '.:/usr/share/php:/usr/share/pear:/var/www/orion/includes/payment/paypal420/lib/');
+ini_set('include_path', '.:../:/home/uzaytek/pear/php');
 
 
 if(!defined('ENVIRONMENT')) {
-  define('ENVIRONMENT', 'DEVELOPMENT');
+  define('ENVIRONMENT', 'PRODUCTION');
 }
 
 if(!defined('IN_ADMIN_PANEL')) {

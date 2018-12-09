@@ -35,7 +35,7 @@ if (isset($_POST['go']) && isset($_POST['basketid'])) {
 $res = false;
 if ($paymentid) {
   $where = ' a.paymentid='.(int)$paymentid;
-  $res = $payment->detailPager($pager, $numrows, $where);
+  $res = $payment->detailPager($pager, $numrows, null, $where);
 }
   
 if ($res) {

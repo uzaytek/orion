@@ -98,7 +98,7 @@ class ON_Display extends HTML_Table {
    * @return string detail link html
    */  
   public function htmldetaillink(&$p, &$encid) {
-    return '<div class="button"><a href="'.LC_SITE.'detail.php?id=' . $encid . '">'. _('Details') . '</a></div>';
+    return '<div class="buttondetail"><a href="'.LC_SITE.'detail.php?id=' . $encid . '">'. _('Details') . '</a></div>';
   }
 
   /**
@@ -109,7 +109,7 @@ class ON_Display extends HTML_Table {
    * @return string basket link html
    */  
   public function htmlbasketlink(&$p, &$encid) {
-    return '<div class="button2"><a href="basket.php?act=add&amp;id='.$encid.'">'._('Add Basket').'</a></div>'; 
+    return '<div class="buttonbasket"><a href="basket.php?act=add&amp;id='.$encid.'">'._('Add Basket').'</a></div>'; 
   }
 
   /**
@@ -179,9 +179,32 @@ class ON_Display extends HTML_Table {
    * @return string share link html
    */  
   public function htmlsharelink($type, &$encid) {
-    $output = '<div class="button"><a href="'.LC_SITE.'share.php?itemtype=product&amp;itemid='.
+    $output = '<div class="buttondetail"><a href="'.LC_SITE.'share.php?itemtype=product&amp;itemid='.
       $encid.'">'._('Share').'</a></div>';    
     return $output;
+  }
+
+
+  /**
+   * calculate campaign price date and set campagin display values
+   * 
+   * @param object $p The product
+   * @param boolean $bCampaign If we have a valid campaign true
+   * @param double $dYouSave Saved money with double
+   * @param integer $pYouSave Saved money with percent
+   */  
+  public function campaignprice(&$p, &$bCampaign, &$dYouSave, &$pYouSave) {
+    $today=date("Y-m-d");
+    if ($p->campaignprice != "" && $p->dtcampaignstart <= $today && $p->dtcampaignstop >= $today) {
+      $bCampaign = true;
+    } else {
+      $bCampaign = false;
+    }
+    $dYouSave = $pYouSave = '';
+    if ($bCampaign) {
+      $dYouSave = $p->price - $p->campaignprice;
+      $pYouSave = round($dYouSave * 100 / $p->price, 2);
+    }
   }
 
   /**
@@ -196,7 +219,15 @@ class ON_Display extends HTML_Table {
     
     if (isset($p->productid)) {
       $encid     = $this->ob_enc->encrypt($p->productid);
-      $output    = "<b>{$p->productname}</b><br>{$p->price}<br>";
+      $output    = '<b>'.$p->productname.'</b><br>';
+      $this->campaignprice($p, $bCampaign, $dYouSave, $pYouSave);
+      if($bCampaign) {
+        $output   .= _('Sale Price:') . fmtPrice($p->campaignprice) .'<br />';
+        $output   .= _('List Price:') . $p->price .'<br />';
+        $output   .= _('You Save:')   . fmtPrice($dYouSave, true, '') . ' %' . $pYouSave .'<br />';
+      } else {
+        $output   .= _('Sale Price:') . fmtPrice($p->price);
+      }
       $output   .= $this->htmlthumbnail($p, $encid);
       $output   .= $this->htmldetaillink($p, $encid);       
       $output   .= $this->htmlbasketlink($p, $encid);       

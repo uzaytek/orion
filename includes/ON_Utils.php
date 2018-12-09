@@ -394,17 +394,17 @@ function isUsernameUnique($element_name, $element_value, $args) {
  * @param boolean $bsymbol If true currency symbol used
  * @return string Formated price and server locale currency symbol
  */
-function fmtPrice($value, $bsymbol=true) {
+function fmtPrice($value, $bsymbol=true, $class='price') {
   $locale = new ON_Locale();
   $m = number_format((double)$value, 2, $locale->decimal_point, $locale->thousands_sep);
   if ($bsymbol == true) {
     if ($locale->p_cs_precedes) {
-      return '<span class="price">'.$locale->currency_symbol . $m.'</span>';
+      return '<span class="'.$class.'">'.$locale->currency_symbol . $m.'</span>';
     } else {
-      return '<span class="price">'.$m . $locale->currency_symbol.'</span>';
+      return '<span class="'.$class.'">'.$m . $locale->currency_symbol.'</span>';
     }
   } else {
-    return '<span class="price">'.$m.'</span>';
+    return '<span class="'.$class.'">'.$m.'</span>';
   }
 }
 

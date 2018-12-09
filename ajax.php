@@ -6,7 +6,7 @@ include 'init.php';
 $act = ON_Filter($_GET['act']);
 
 switch($act) {
-case 'subscribe':
+case 'bulletinSubscribe':
   Subscribe($_GET['email']);
   break;
 case 'basket':
@@ -23,8 +23,8 @@ default:// failed
 }
 
 function Subscribe($email) {
-  $user = new ON_User();
-  $ret = $user->insertSubscription($email);
+  $user =& ON_User::getInstance();
+  $ret = $user->insertBulletinSubscription($email);
   if ($ret) {
     // $newmail = new ON_Mail('subscribe', array('to'=>$email));
     // $newmail->send();

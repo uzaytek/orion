@@ -65,7 +65,6 @@ class ON_Thumbnail
 	  @$this->img["tinggi"] = imagesy($this->img["src"]);
 	  //default quality jpeg
 	  $this->img["quality"]=90;
-	  $this->size_auto(200);
 	}
 
 	function size_height($size=100)

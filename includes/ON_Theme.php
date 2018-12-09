@@ -120,6 +120,30 @@ function theme_banner($location) {
   echo $output;
 }
 
+/**
+ * Echo bestseller products box
+ * 
+ */  
+function theme_bestseller_box() {
+  $products = new ON_Product();
+  $enc = new ON_Enc();
+
+  $pagerOptions = array('perPage' => 10);
+  $res = $products->pager($pager, $numrows, $pagerOptions, ' AND a.isabestseller=1');
+  $output = ''; 
+  if ($res) {
+    $output .= '<h2><p>'._('Bestsellers').'</p></h2><ol>';
+    while($row = $res->fetch()) {
+      $output .= '<li><a href="' . LC_SITE . 'detail.php?&id='. $enc->encrypt($row['productid']).'">'.
+        $row['productname'].'</a></li>';
+            
+    }
+    $output .= '</ol>';
+    echo $output;
+  }  
+}
+
+
 
 /**
  * Echo news box
@@ -273,7 +297,7 @@ function theme_content(&$output=null) {
       }// end res
     } // end else
     break;
-  case 'user.update':
+ case 'user.update':
     $user =& ON_User::getInstance();
     $userid = $session->get('userid');
     $user->load($userid);
@@ -310,7 +334,7 @@ function theme_content(&$output=null) {
   case 'newproducts':
     $product = new ON_Product();
     // new products
-    $res = $product->pager($pager, $numrows,
+    $res = $product->pager($pager, $numrows, null, 
                            ' AND (a.dtcreated > DATE_SUB(NOW(), INTERVAL 1 WEEK)) OR a.isanewone=1');
 
     if ($res) {
@@ -323,24 +347,24 @@ function theme_content(&$output=null) {
       $output .= $tpl->display();
     }
     break;
-  case 'index';
   default:
+
     $product = new ON_Product();
     $tpl = new ON_Display('Product');
 
-    $output = '';
+    $output = theme_headlines();
 
     $catid = (isset($_REQUEST['catid'])) ? (int)$_REQUEST['catid'] : 0;
 
     if ($catid > 0) {
       // $catid category products
-      $res = $product->pager($pager, $numrows, ' AND a.catid='.$catid);
+      $res = $product->pager($pager, $numrows, null, ' AND a.catid='.$catid);
       $cat = new ON_Cat();
       $aCats = $cat->getCats($catid);
       $tpl->title($aCats[$catid].'&nbsp;<a href="share.php?itemtype=cat&amp;itemid='.$catid.'">'._('Share').'</a>');
     } else {
       // promoted products
-      $res = $product->pager($pager, $numrows, ' AND a.isapromote=1');
+      $res = $product->pager($pager, $numrows, null, ' AND a.isapromote=1');
       $tpl->title(_('Popular Products'));
     }
 
@@ -355,7 +379,6 @@ function theme_content(&$output=null) {
   }
   echo $output;
 }
-
 
 
 /**
@@ -376,7 +399,19 @@ function theme_category_box() {
 }
 
 
-
+/**
+ * Print e-bulletin subscribe box
+ *
+ */
+function theme_bulletin_box() {
+  $out = '<h2><p>'._('E-Bulletin Subscribe').'</p></h2>';
+  $out .= '<p id="mailboxon">';
+  $out .= _('E-mail').' <input type="text" name="ebulletinmail" id="ebulletinmail">'.
+    '<input type="button" class="sb" value="'._('Register').'" onClick="javascript:bulletinSubscribe(\'ebulletinmail\')">';
+  $out .= '</p>';
+  $out .= '<p style="display:none" id="mailboxoff">'._('Please control your mailbox for activation').'</p>';
+  echo $out;
+}
 
 /**
  * Print web site login box
@@ -434,6 +469,49 @@ function theme_search_box() {
   }
 }
 
+/**
+ * Echo headline products
+ * 
+ */  
+function theme_headlines() {
+  $product = new ON_Product();
+  // new products
+  $res = $product->pager($pager, $numrows, null, ' AND a.isaheadline=1');
+  $output = '';
+  if ($res) {
+    $output = '<div id="slideshowHolder" style="border:1px solid #dedede">';
+    while($p = $res->fetch(PDO::FETCH_OBJ)) {
+      $file_name = $p->hostfilename . $p->fileextension;
+      $file_path = PT_IMAGE . $file_name;
+      if (file_exists($file_path)) {
+        $bheadline = false;
+        // if headline image exits, cached default image
+        $headline_path = PT_IMAGE . 'headline_'.$file_name;
+        if(file_exists($headline_path)) { // use headline image
+          $bheadline = true;
+        } else { // generate headline
+          $thumb = new ON_Thumbnail($file_name);
+          $thumb->size_height(300);
+          $thumb->save(PT_IMAGE . 'headline_'.$file_name);
+          if (file_exists($headline_path)) { // last control if save (cache) process successfull use saved one
+            $bheadline = true;
+          }
+        }
+
+        if ($bheadline ) {
+          $image_src = LC_IMAGE . 'headline_'.$file_name;
+        } else { // whatever use original
+          $image_src = LC_IMAGE . $file_name;
+        }
+
+        $output .= '<img border="0" src="' . $image_src.'" alt="' . $p->productname . '" />';
+      }// end if original file exists
+    } // end while
+    $output .= '</div>';
+  }
+  return $output;
+
+}
 
 /**
  * Print web site footer menu

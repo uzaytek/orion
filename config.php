@@ -5,14 +5,14 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 ini_set('display_errors','On'); 
 
 /* ---[ PROJECT ]------------------------------- */
-define('ON_VERSION',         '0.1');
+define('ON_VERSION',         '0.2');
 define('ON_PROJECT_NAME',    'Orion');
 define('ON_SESSION_NAME',    'Orion');
 
 /* ---[ PATH & URL VARIABLES; prefix PT:path,LC:locations ]------------------------------- */
 define('PT_PROJECT', '/orion'); // project path
 define('PHP_SELF', basename(filter_var($_SERVER['PHP_SELF'])));
-define('PT_SITE', '/var/www/orion/');
+define('PT_SITE', '/home/uzaytek/uzaytek.com/orion/');
 
 if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
   define('LC_SITE', 'https://' . $_SERVER['SERVER_NAME'] . PT_PROJECT . '/');
@@ -41,7 +41,7 @@ define('DB_USER',     'dbuser');//postgres
 define('DB_PASSWORD', 'dbpass');
 define('EM_ADMIN',    'admin@');
 
-$prefix = '';
+$prefix = 'orion_';
 // tables
 define('DB_TBL_ADMINS',           $prefix . 'admins');
 define('DB_TBL_BANNERS',          $prefix . 'banners');
@@ -58,6 +58,7 @@ define('DB_TBL_PRODUCT_FAVORS',   $prefix . 'productfavors');
 define('DB_TBL_STOCK_ALARMS',     $prefix . 'productstockalarms');
 define('DB_TBL_IMAGES',           $prefix . 'productimages');
 define('DB_TBL_NEWS',             $prefix . 'news');
+define('DB_TBL_NEWSLETTERS',      $prefix . 'newsletters');
 define('DB_TBL_PAYMENT_ACCOUNTS', $prefix . 'paymentaccounts');
 define('DB_TBL_PAYMENT_GATEWAYS', $prefix . 'paymentgateways');
 define('DB_TBL_USERS',            $prefix . 'users');

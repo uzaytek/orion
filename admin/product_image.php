@@ -44,6 +44,7 @@ if ($image->form->isSubmitted() && $image->form->validate()) {
     if ($image->setValues($file) && $image->insert($imgid)) {
       // if successfull create thumbnail
       $thumb = new ON_Thumbnail($image->getName());
+      $thumb->size_auto(200);
       $thumb->save();
       $image->isupdate('isdefault=0',' WHERE productid='.$productid);
       $image->isupdate('isdefault=1',$imgid);

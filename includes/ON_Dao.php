@@ -597,6 +597,7 @@ class ON_Dao {
    * @return string Datetime value
    */
   public function getDate($type, $time=null) {
+
     if (!$time) {
       $_time = time();
     } else {

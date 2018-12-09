@@ -41,7 +41,9 @@ class ON_Product extends ON_Dao
   {
     parent::__construct(array('table'=> DB_TBL_PRODUCTS, 'pk'=>'productid', 'seq'=> ''),
                         array('productid','catid','productname','productdetail','stockcount','oldstockcount',
-                              'urlhandler','price','isanewone','isapromote','isdeleted',
+                              'urlhandler','price',
+                              'isanewone','isapromote','isaheadline','isabestseller','isdeleted',
+                              'campaignprice','dtcampaignstart','dtcampaignstop',
                               'dtcreated','dtmodified','dtdeleted'));
 
     $this->setWhere('(isdeleted=0 OR isdeleted IS NULL)', '');
@@ -85,7 +87,7 @@ class ON_Product extends ON_Dao
    * @param string  $where Add to query if exists
    * @return boolean True if success otherwise false
    */  
-  public function pager(&$pager, &$numrows, $where=null) {
+  public function pager(&$pager, &$numrows, $pagerOptions=null, $where=null) {
 
     $user =& ON_User::getInstance();
 
@@ -109,7 +111,7 @@ class ON_Product extends ON_Dao
     if ($where) {$query .= $where;}
     $query .= $this->orderby();
 
-    return parent::_pager($pager, $numrows, null, $query);
+    return parent::_pager($pager, $numrows, $pagerOptions, $query);
   }
 
   /**
@@ -237,6 +239,11 @@ class ON_Product extends ON_Dao
       $this->price = number_format($this->price, 2, '.', '');
     }
 
+    if($this->campaignprice) {
+      $this->campaignprice = number_format($this->campaignprice, 2, '.', '');
+    }
+
+
     $tag_arr = array();
     if ($this->productid > 0) {
       $tags = new ON_Tag();
@@ -251,6 +258,24 @@ class ON_Product extends ON_Dao
     if ($this->isapromote > 0) {
       $ispages['ispages']['isapromote'] = 1;
     }
+
+    if ($this->isaheadline > 0) {
+      $ispages['ispages']['isaheadline'] = 1;
+    }
+
+    if ($this->isabestseller > 0) {
+      $ispages['ispages']['isabestseller'] = 1;
+    }
+
+
+    if ($this->dtcampaignstart) {
+      $this->dtcampaignstart = $this->getDate('o', $this->dtcampaignstart);
+    }
+
+    if ($this->dtcampaignstop) {
+      $this->dtcampaignstop = $this->getDate('o', $this->dtcampaignstop);
+    }
+
 
     return array_merge(parent::defaults(), $tag_arr, $ispages);
   }
@@ -267,10 +292,18 @@ class ON_Product extends ON_Dao
     $this->oldstockcount = (int)$this->stockcount;
     $this->stockcount    = 0;//(int)$values['stockcount'];
     $this->price         = number_format(ON_Filter($values['price']), 2, '.', '');
-    // show the new product with a new image in the web pages
+    // new product
     if(isset($values['ispages']['isanewone'])) $this->isanewone   = (int)$values['ispages']['isanewone'];
-    // show the new product with a new image in the web pages
+    // promote page
     if(isset($values['ispages']['isapromote'])) $this->isapromote = (int)$values['ispages']['isapromote'];
+    // headline
+    if(isset($values['ispages']['isaheadline'])) $this->isaheadline = (int)$values['ispages']['isaheadline'];
+    // bestseller
+    if(isset($values['ispages']['isabestseller'])) $this->isabestseller = (int)$values['ispages']['isabestseller'];
+
+    if(isset($values['campaignprice'])) $this->campaignprice = number_format(ON_Filter($values['campaignprice']), 2, '.', '');
+    if(isset($values['dtcampaignstart'])) $this->dtcampaignstart = $this->getDate('dt', $values['dtcampaignstart']);
+    if(isset($values['dtcampaignstop'])) $this->dtcampaignstop = $this->getDate('dt', $values['dtcampaignstop']);
 
     // insert/update tags to db
     $this->ob_tags = new ON_Tag($values['tags']);
@@ -353,13 +386,30 @@ class ON_Product extends ON_Dao
     $this->form->setAutoComplete('tags', 'ac_tags', $js_tags);
     
     $_check[] = $this->form->createElement('checkbox', 'isanewone', null, _('New Products'), array('class'=>'borderless'));
-    $_check[] = $this->form->createElement('checkbox', 'isapromote', null, _('Popular Products'), 
+    $_check[] = $this->form->createElement('checkbox', 'isapromote', null, _('Popular Products'), array('class'=>'borderless'));
+    $_check[] = $this->form->createElement('checkbox', 'isaheadline', null, _('Show in the Headlines box'), 
                                            array('class'=>'borderless'));
-    $this->form->addGroup($_check, 'ispages', _('Show in the Page:'));
+    $_check[] = $this->form->createElement('checkbox', 'isabestseller', null, _('Show in the Bestseller box'), 
+                                           array('class'=>'borderless'));
+
+    $this->form->addGroup($_check, 'ispages', _('Show in the Page/Area:'), '<br />');
 
     
     $this->form->addElement('textarea', 'productdetail', _('Description'), 'id="productdetail"');
     $this->form->setRichTextTemplate('productdetail');
+
+    $this->form->addElement('header', 'cc', _('Campaign'));
+
+    $this->form->addElement('text', 'campaignprice', _('Campaign Price'), array('class'=>'money'));
+    $locale = new ON_Locale();
+    $this->form->setAddNoteTemplate('campaignprice', $locale->currency_symbol);
+
+
+    $this->form->addElement('text', 'dtcampaignstart', _('Campaign Start Date'),'class="mi" id="dtcampaignstart"');
+    $this->form->setDateTemplate('dtcampaignstart');
+
+    $this->form->addElement('text', 'dtcampaignstop', _('Campaign Stop Date'),'class="mi" id="dtcampaignstop"');
+    $this->form->setDateTemplate('dtcampaignstop');
 
     $this->form->addElement('submit', 'sb', _('Save'), 'class="mi"');
   }
@@ -370,6 +420,7 @@ class ON_Product extends ON_Dao
    */  
   public function searchForm(&$form) {
     $form     = new ON_QuickForm('SearchProduct', 'get', 'product_search.php');
+    $form->hideRequiredNote();
     // add elements
     $form->addElement('text', 'sw', _('Product Name/Detail')); 
     $form->setInlineTemplate('sw');  
@@ -451,10 +502,6 @@ class ON_Product extends ON_Dao
    */  
   private function _getfilter($key, $value) {    
     switch($key) {
-    case 'total':
-    case 'price':
-      $value = fmtPrice($value);
-      break;
     case 'phone':
     case 'fax':
       if ($value != '' && ereg("([0-9]{3})-([0-9]{7})",$value, $regs)) {              

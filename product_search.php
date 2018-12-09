@@ -22,7 +22,7 @@ if (isset($_GET['sw'])) {
   $where = substr($where, 0, -2);
   $where .= ')';
 
-  $res = $product->pager($pager, $numrows, $where);
+  $res = $product->pager($pager, $numrows, null, $where);
 
   if ($res) {
     $_options = array('detail.php?'                    => _('Detail'),

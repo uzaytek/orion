@@ -24,15 +24,17 @@ function randomString() {
 }
 
 
-function bulletinSubscribe(brandhandler) {
-    mbox = document.getElementById('mailbox');
+function bulletinSubscribe(element) {
+    mbox = document.getElementById(element);
     email = mbox.value;
-    http.open('get', SITE_ADDRESS + 'ajax.php?act=bulletinSubscribe&amp;email='+email);
-    http.onreadystatechange = handleBrandSubscribe;
-    http.send(null);
+    if (email != '') {
+        http.open('get', SITE_ADDRESS + 'ajax.php?act=bulletinSubscribe&email='+email);
+        http.onreadystatechange = handleBulletinSubscribe;
+        http.send(null);
+    }
 }
 
-function handleBrandSubscribe() {
+function handleBulletinSubscribe() {
     if(http.readyState == 4) {
 	res = http.responseText;
 	data = res.split('|');

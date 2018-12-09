@@ -220,7 +220,7 @@ class ON_User extends ON_Dao
    * @param string $email The subscribed user email
    * @return integer affected rows count
    */  
-  public function insertBulletinSubs($email) {
+  public function insertBulletinSubscription($email) {
     if(!self::$db) $this->connect();
     try {
       $result =& self::$db->exec('INSERT INTO ' . DB_TBL_UBULLETIN . '(email)' .
@@ -382,6 +382,7 @@ class ON_User extends ON_Dao
     //formname, method, action, target, attributes, tracksubmit    
     $this->form = new ON_QuickForm($formName, $method, $action, '', 'class="register"', true); 
     $this->form->setTableFormTemplate();
+    $this->form->hideRequiredNote();
     
     $output = '';
     // add elements

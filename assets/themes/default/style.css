@@ -30,7 +30,8 @@ h2 p {
     font:bold 1.2em Verdana, Helvetica, sans-serif;color:#c83b00;
 }
 
-.button {
+/* detail and share */
+.buttondetail {
 	 background-image:url('./images/buttonback.png');
 	 background-repeat: no-repeat;
     text-align:center;
@@ -40,13 +41,16 @@ h2 p {
     margin:6px;
 }
 
-.button a, .button a:link, .button a:visited, .button li a:hover {
+
+.buttondetail a, .buttondetail a:link, .buttondetail a:visited, .buttondetail li a:hover {
 	 font:1em Verdana, Helvetica, sans-serif;   
     color:#fff; 
     text-decoration:none;
 }
 
-.button2 {
+/* add basket */
+
+.buttonbasket {
 	 background-image:url('./images/buttonback2.png');
 	 background-repeat: no-repeat;
     text-align:center;
@@ -56,7 +60,7 @@ h2 p {
     margin:6px;
 }
 
-.button2 a, .button2 a:link, .button2 a:visited, .button2 li a:hover {
+.buttonbasket a, .buttonbasket a:link, .buttonbasket a:visited, .buttonbasket li a:hover {
 	 font:1em Verdana, Helvetica, sans-serif;   
     color:#fff; 
     text-decoration:none;
@@ -300,7 +304,6 @@ h2 p {
     font-size: .7em;
 }
 
-
 .register {
     margin-left:20px;
     margin-top:10px;
@@ -329,7 +332,6 @@ h2 p {
     border-bottom:1px #dedede solid;
 }
 
-
 /**
  * Kona Coast
  *
@@ -337,6 +339,7 @@ h2 p {
  * http://www.colourlovers.com/palette/586482/Kona_Coast
  *
  **/
+
 
 #zebraTable {
     border-collapse:collapse;
@@ -380,3 +383,4 @@ h2 p {
 #zebraTable A.btn:hover {
     color:#000;
 }
+

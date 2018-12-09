@@ -44,10 +44,18 @@ class ON_QuickForm extends HTML_QuickForm {
 
     $renderer->setElementTemplate($element_template);
     $renderer->setHeaderTemplate($header_template);
-    $renderer->setRequiredNoteTemplate('&nbsp;');    
     $this->setRequiredNote('<span class="warn"><span class="star">*</span> '._('required fields').'</span>');
     $this->setJsWarnings('Error found!', _('Please correct all errors and try again!'));
     $this->applyFilter('__ALL__', 'trim');    
+  }
+
+  /**
+   * hide required note, set renderer template an empty string '',
+   * if we set empty string with setRequiredNote() it displays default text message '* denotes a requried fields'
+   */ 
+  function hideRequiredNote() {
+    $renderer =& $this->defaultRenderer();
+    $renderer->setRequiredNoteTemplate('');
   }
 
   /**

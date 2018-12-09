@@ -39,7 +39,7 @@ if ($form->validate()) {
     $body = $values['message']."\n\n".$values['name'];
     $headers  = 'Content-type: text/html; charset=utf-8' . "\n";
     $headers .= 'From: Ursaminor <'.filter_var($values['email'], FILTER_VALIDATE_EMAIL).'>' . "\n";
-    $bmail = mail(EM_ADMIN, $values['subject'], $body, $headers);
+    // $bmail = mail(EM_ADMIN, $values['subject'], $body, $headers);
     if ($bmail) {
       $output = fmtSuccess(_('Your contact request has been successfully submitted'));  
     } else {

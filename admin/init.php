@@ -38,7 +38,7 @@ $_top_menu = array(
                          array('faq.php','faqadd', _('New Faq')),
                          array('list_faqs.php','faqlst', _('List Faq')),
                          array('newsletter.php','newsletteradd', _('New E-Bulletin')),
-                         array('newsletter_send.php','newslettersend', _('Send E-Bullettin')),
+                         array('list_newsletters.php','newslettersend', _('Send E-Bullettin')),
                          array('upload_file.php','uploadfile', _('Upload Document')),
                          ),
                    array(array('list_payments.php', 'payments', _('Orders')),

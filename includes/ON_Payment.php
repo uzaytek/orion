@@ -360,7 +360,9 @@ class ON_Payment extends ON_Dao
     $aGates = $gates->getAll();
     foreach ($aGates as $gate) {
       $id = $enc->encrypt($gate['gateid']);
-      $output .= '<li><a href="'.LC_SECURE_SITE.'payment/gateway.php?gateid='.$id.'">'.$gate['title'].'</a></li>';
+      if ($gate['istestmode'] != 1) {
+        $output .= '<li><a href="'.LC_SECURE_SITE.'payment/gateway.php?gateid='.$id.'">'.$gate['title'].'</a></li>';
+      }
     }
 
     $accounts  = new ON_PaymentAccount();

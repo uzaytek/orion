@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Newsletter dao object 
+ * News table dao object 
  * 
  */  
 class ON_Newsletter extends ON_Dao
@@ -15,75 +15,22 @@ class ON_Newsletter extends ON_Dao
   public $form;
 
   /**
-   * Construct and load itself
+   * If form values valid true otherwise false for insert/update process
+   * 
+   * @var boolean
+   */  
+  public $isFormValid;
+
+  /**
+   * Construct newsletter
    * 
    */  
   public function __construct() {
-    parent::__construct(array('table'=> DB_TBL_GLOBALS, 'pk'=>'globalid','seq'=>'_nid_seq'),
-                        array('globalid','newsletter_body','newsletter_subject')
+    parent::__construct(array('table'=> DB_TBL_NEWSLETTERS, 'pk'=>'letterid','seq'=>''),
+                        array('letterid','lettersubject','letterbody','isdeleted','dtcreated')
 			);
-    $this->load();
   }
 
-  /**
-   * load from database
-   * 
-   */  
-  public function load() {
-
-    try {
-      if(!self::$db) $this->connect();
-      $result = self::$db->query("SELECT * FROM ".DB_TBL_GLOBALS.
-                                 " WHERE tag='newsletter' AND tagproperty='template'");
-      $row =& $result->fetch(PDO::FETCH_ASSOC); 
-    } catch (PDOException $e) {
-      $this->fatal_error($e->getMessage());
-    }
-    // must be set for insert if not available
-    if(is_array($row)) {
-      $this->globalid = $row['globalid'];
-      $aTemplate = unserialize($row['tagvalue']); // it is serialized in the insert/update
-      foreach($aTemplate as $key=>$value) {
-        $this->$key = $value;
-      }
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  /**
-   * Insert values to db
-   *
-   */  
-  public function insert() {
-    try {
-      if(!self::$db) $this->connect();
-      $tagvalue = serialize(array('newsletter_subject'=>$this->newsletter_subject,'newsletter_body'=>$this->newsletter_body));
-      $result = self::$db->exec('INSERT INTO ' . DB_TBL_GLOBALS .
-                                ' (tag, tagproperty, tagvalue) VALUES ('.
-                                '\'newsletter\',\'template\','.$this->quote($tagvalue).');');
-      return $result;
-    } catch (PDOException $e) {
-      $this->fatal_error($e->getMessage());
-    }
-  }
-
-  /**
-   * Update values
-   *
-   */  
-  public function update() {
-    try {
-      if(!self::$db) $this->connect();
-      $tagvalue = serialize(array('newsletter_subject'=>$this->newsletter_subject,'newsletter_body'=>$this->newsletter_body));
-      $result = self::$db->exec('UPDATE ' . DB_TBL_GLOBALS .
-                                ' SET tagvalue = '.$this->quote($tagvalue).'  WHERE globalid='.(int)$this->globalid);
-      return $result;
-    } catch (PDOException $e) {
-      $this->fatal_error($e->getMessage());
-    }
-  }
 
   /**
    * Register quickform object
@@ -95,19 +42,7 @@ class ON_Newsletter extends ON_Dao
   }
 
   /**
-   * Fill the send a bulletin form
-   * 
-   */
-  public function fillSendForm() {
-    // add elements
-    $this->form->addElement('text', 'addtomail', _('E-mail'));
-    $this->form->setAddNoteTemplate('addtomail',
-				    _('If you find a copy of this bulletin please provide an e-mail'), true);
-    $this->form->addElement('submit', 'sb', _('Send'), 'class="sb"');
-  }
-
-  /**
-   * Fill the edit bulletin values form
+   * Fill the newsletter form
    * 
    */
   public function fillForm() {
@@ -116,26 +51,98 @@ class ON_Newsletter extends ON_Dao
     $defaults = $this->defaults();
     $this->form->setDefaults($defaults);
     
-    // add elements
-    $this->form->addElement('text', 'newsletter_subject', _('Bulletin Subject'));
-    $this->form->addRule('newsletter_subject', _('Subject required'), 'required', null, 'client');
+    // add hidden element to session for controller purpose
+    if ($this->letterid > 0) {
+      $enc = new ON_Enc();
+      $this->form->addElement('hidden', 'id', $enc->encrypt($this->letterid));
+    }
 
-    $this->form->addElement('textarea', 'newsletter_body', _('Bulletin Body'), 'id="newsletter_body"');
-    $this->form->setRichTextTemplate('newsletter_body');
-    $this->form->addRule('newsletter_body', _('Bulletin body required'), 'newsletter_body', 'required', 'client');
+    if (isset($_REQUEST['currentpage'])) {
+      $this->form->addElement('hidden', 'currentpage', intval($_REQUEST['currentpage']));
+    }
+
+    // add elements
+    $this->form->addElement('text', 'lettersubject', _('Newsletter Subject')); 
+    $this->form->addRule('lettersubject', _('Newsletter subject required'), 'required', null, 'client');
+
+    $this->form->addElement('textarea', 'letterbody', 'Newsletter Body', 'id="letterbody"');
+    $this->form->setRichTextTemplate('letterbody');
+    $this->form->addRule('letterbody', _('Newsletter body required'), 'letterbody', 'required', 'client');
 
     $this->form->addElement('submit', 'sb', _('Save'), 'class="sb"');
   }
 
   /**
-   * Set values
-   *
-   * @param array $values The form values filled by panel user
+   * Fill the send a bulletin form
+   * 
    */
-  public function setValues(&$values) {
-    $this->newsletter_subject  = ON_Filter($values['newsletter_subject']);
-    $this->newsletter_body     = ON_Filter($values['newsletter_body']);
+  public function fillSendForm() {
+    // add elements
+
+    if ($this->letterid > 0) {
+      $enc = new ON_Enc();
+      $this->form->addElement('hidden', 'id', $enc->encrypt($this->letterid));
+    }
+
+
+    $this->form->addElement('text', 'addtomail', _('E-mail'));
+    $this->form->setAddNoteTemplate('addtomail',
+				    _('If you find a copy of this bulletin please provide an e-mail'), true);
+    $this->form->addElement('submit', 'sb', _('Send'), 'class="sb"');
   }
+
+  /**
+   * Set newsletter values
+   * 
+   * @param array $values The form values filled by panel user
+   */  
+  public function setValues(&$values) {
+    $this->lettersubject   = ON_Filter($values['lettersubject']);
+    $this->letterbody  = ON_Filter($values['letterbody']);
+  }
+
+  /**
+   * Call quickform form validate
+   * if form valid true call setValues
+   *
+   * @return boolean isFormValid
+   */  
+  public function validate() {
+    $this->isFormValid = $this->form->validate();
+    if ($this->isFormValid) {
+      $values =& $this->form->exportValues();
+      $this->setValues($values);      
+    }
+    return $this->isFormValid;
+  }
+
+  /**
+   * Insert values to db
+   *
+   * @param integer $letterid The database row id 
+   */  
+  public function insert(&$letterid) {
+
+    if ($this->isFormValid !== true) {
+      return false;
+    }
+
+    return parent::insert($letterid);
+  }
+
+  /**
+   * Update values to db
+   *
+   * @param integer $letterid The database row id 
+   */  
+  public function update(&$letterid) {
+    if ($this->isFormValid !== true) {
+      return false;
+    }
+    return parent::update($letterid);
+  }
+
+
 }
 
 

@@ -63,6 +63,7 @@ class ON_Cat extends ON_Dao
     if ($this->isFormValid !== true) {
       return false;
     }
+    $this->catorder = 0;
     return parent::insert($catid);
   }
 

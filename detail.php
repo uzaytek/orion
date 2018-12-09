@@ -15,7 +15,7 @@ if ($session->ifset('userid')) {
 $product = new ON_Product();
 $tpl = new ON_Display('ProductDetail');
 $numrows = 1;
-$res = $product->pager($pager, $numrows, ' AND a.productid='.$productid);
+$res = $product->pager($pager, $numrows, null, ' AND a.productid='.$productid);
 $p = $res->fetch(PDO::FETCH_OBJ);
 if ($p) {
   $product->getfilter($p);
